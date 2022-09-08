@@ -1,7 +1,9 @@
 import uniqueRandomArray from "unique-random-array"
 import NftCard from "../components/Card/NftCard"
-import DATA from "../data/NftData.json"
+import { DATA } from "../data/NftData"
+
 import "./home.scss"
+
 
 const Home = () => {
 
@@ -12,25 +14,20 @@ const Home = () => {
         'linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%)',
         'linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%)'
     ]
-    const pageBgArr = [
-        'linear-gradient(43deg, #4158D0 0%, #C850C0 46%)',
-        'linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%)',
-        'linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)',
-        'linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%)'
-    ]
+
 
 
     const random = uniqueRandomArray(nftBgArr)
-    const random2 = uniqueRandomArray(pageBgArr)
 
     return(
+
       <div className="wrapper">
 
     {/* Conditional rendering denepnds viewport*/ }
 
         {document.documentElement.clientWidth <=1000 ? DATA.map(data=>
 
-            <section style={{backgroundImage:random2(), display:'flex', justifyContent:'center'}} >
+            <section style={{ display:'flex', justifyContent:'center'}} >
 
                 <NftCard publisher={data.publisher}  currency={data.currency} price={data.price}randomBg={random()} src={data.url} title={data.title} />
 
@@ -39,7 +36,7 @@ const Home = () => {
         )   :
             <>
 
-            <section style={{backgroundImage:random2()}}>
+            <section>
 
                 {DATA.slice(0,3).map(data => 
 
@@ -51,7 +48,7 @@ const Home = () => {
 
            { DATA.slice(3).map(data => 
             
-            <section style={{backgroundImage:random2()}}>
+            <section>
 
                 <NftCard publisher={data.publisher} currency={data.currency} price={data.price}randomBg={random()} title={data.title} src={data.url}/>
 

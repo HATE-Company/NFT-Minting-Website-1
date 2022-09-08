@@ -2,12 +2,12 @@ import Tilt from "react-parallax-tilt"
 import "./nftcard.scss"
 const NftCard = (props) => {
 
-    
+    console.log(typeof(props.src))
     return(
 
-        <Tilt className="nftcard" style={{backgroundImage: props.randomBg}} glareBorderRadius='20px' glareEnable={true}glareMaxOpacity='0.5' glarePosition="all"   scale='1.1'>
+        <Tilt className="nftcard" tiltMaxAngleX="10" style={{backgroundImage: `url(${props.src})`}} glareBorderRadius='20px' glareEnable={true}glareMaxOpacity='0.5' glarePosition="all"   scale='1.1'>
 
-                <div className="nftcard__img">
+                {/* <div className="nftcard__img">
 
                     <img src={props.src}/>
 
@@ -31,7 +31,7 @@ const NftCard = (props) => {
 
                 <h3>{props.publisher}</h3>
                 
-            </div>
+            </div> */}
 
         </Tilt>
     )

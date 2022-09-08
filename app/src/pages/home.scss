@@ -1,12 +1,13 @@
 .wrapper{
     height: 100vh;
     overflow-y: auto;
-    scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
     
     & section {
         height: 100vh;
         display: flex;
         justify-content: center;
+        background-color: #242424;
         align-items: center;
         scroll-snap-align: start;
         grid-template-columns: repeat(3,1fr)
