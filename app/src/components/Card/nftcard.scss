@@ -4,7 +4,7 @@
     width: 258px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
     text-align: center;
     background-size: cover;
@@ -13,26 +13,26 @@
     transform-style: preserve-3d;
 
     &__id{
+
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 12%;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
     font-size: 20px;
     font-style: italic;
+    margin-bottom: 1rem;
     color: white;
     transform: translateZ(60px);
     width: 95%;
     text-shadow: 1px 1px 1px black;
-
     line-height: 2.5rem;
+
     & p{
         line-height: 1rem;
         font-style: normal;
         font-size: 18px;
         width: 70%;
     }
+    
     }
 
     &__img{
@@ -47,11 +47,17 @@
     }
 
     &__price{
-        position: absolute;
-        bottom: 0.5rem;
         color: #fff;
+        position: relative;
+        bottom:10px;
+        right: 10px;
+        display: flex;
+        justify-content: flex-end;
         font-size: 24px;
-        right: 1rem;
+        text-shadow: 1px 1px 10px black;
+        width: 100%;
+        transform: translateZ(60px);
+
     }
 
     &__publisher{
@@ -73,3 +79,21 @@
 
 
 
+@media screen and (max-width: 500px){
+
+    .nftcard{
+        border-radius: 20px;
+        height: 17.4rem;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        background-size:auto;
+        background-size: contain;
+        align-items: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+
+    }
+}

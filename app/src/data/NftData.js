@@ -3,7 +3,7 @@ export const DATA = [
         "id":1,
         "title":"Bronze",
         "url":require("../assets/img/bronze.png"),
-        "price":10,
+        "price":'$9.99',
         "currency":"Eth",
         "publisher": "@catalyststuff"
     },
@@ -11,7 +11,7 @@ export const DATA = [
         "id":2,
         "title":"Silver",
         "url":require("../assets/img/silver.png"),
-        "price":7,
+        "price":"$29.99",
         "currency":"Bnb",
         "publisher": "@catalyststuff"
     },
@@ -19,7 +19,7 @@ export const DATA = [
         "id":3,
         "title":"Gold",
         "url":require("../assets/img/gold.png"),
-        "price":2,
+        "price":"$49.99",
         "currency":"Bnb",
         "publisher": "@catalyststuff"
     },
@@ -27,7 +27,7 @@ export const DATA = [
         "id":4,
         "title":"Black",
         "url":require("../assets/img/black.png"),
-        "price":18,
+        "price":"Contact With Us",
         "currency":"Sol",
         "publisher": "@catalyststuff"
     },
@@ -35,7 +35,7 @@ export const DATA = [
         "id":5,
         "title":"Test",
         "url":require("../assets/img/test.png"),
-        "price":0.7,
+        "price":"Expensive, i guess?",
         "currency":"Eth",
         "publisher": "@catalyststuff"
     }
