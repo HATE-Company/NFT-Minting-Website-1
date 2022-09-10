@@ -1,7 +1,6 @@
 import uniqueRandomArray from "unique-random-array"
 import NftCard from "../components/Card/NftCard"
 import { DATA } from "../data/NftData"
-import ReactCSSTransitionGroup from 'react-transition-group';
 import "./home.scss"
 
 
@@ -26,7 +25,7 @@ const Home = () => {
 
         {document.documentElement.clientWidth <=1000 ? DATA.map(data=>
 
-            <section style={{ display:'flex', justifyContent:'center'}} >
+            <section style={{ display:'flex', justifyContent:'center' }} >
 
                 <NftCard publisher={data.publisher}  currency={data.price} price={data.price}randomBg={random()} src={data.url} title={data.title} />
 
@@ -46,7 +45,7 @@ const Home = () => {
             </section>
 
            { DATA.slice(3).map(data => 
-            <section>
+            <section style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(1,1,1,1) 0%, rgba(12,17,16,1) 86%, rgba(14,21,18,1) 97%)"}}>
 
                 <NftCard publisher={data.publisher} currency={data.price} price={data.price}randomBg={random()} title={data.title} src={data.url}/>
 

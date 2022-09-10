@@ -1,17 +1,18 @@
 .wrapper{
     height: 100vh;
     overflow-y: auto;
-  scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
 
     
     & section {
         height: 100vh;
         display: flex;
         justify-content: center;
-        background-color: #242424;
+        background: rgb(255,255,255);
+        background: linear-gradient(94deg, rgba(255,255,255,1) 0%, rgba(254,230,202,1) 0%, rgba(226,240,226,1) 50%, rgba(203,250,248,1) 100%);
         align-items: center;
         scroll-snap-align: start;
-        grid-template-columns: repeat(3,1fr)
+        grid-template-columns: repeat(3,23%)
         // grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
     }
     & section:nth-child(1) {
