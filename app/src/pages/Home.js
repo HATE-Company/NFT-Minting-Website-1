@@ -1,65 +1,63 @@
-import uniqueRandomArray from "unique-random-array"
-import NftCard from "../components/Card/NftCard"
-import { DATA } from "../data/NftData"
+import NftCard from "../component/NftCard"
 import "./home.scss"
-
-
 const Home = () => {
 
-{/* Arrays for generating background on every render */}
-
-    const nftBgArr = [
-        'linear-gradient( 135deg, #FEB692 10%, #EA5455 100%)',
-        'linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%)',
-        'linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%)'
-    ]
-
-
-    const random = uniqueRandomArray(nftBgArr)
-
     return(
+        <div className="wrapper">
 
-      <div className="wrapper">
+        {document.documentElement.clientWidth >=1000 ?
+        <>
+        <section className="wrapper__firstsection">
 
-    {/* Conditional rendering denepnds viewport*/ }
+            <div className="wrapper__3card">
 
-        {document.documentElement.clientWidth <=1000 ? DATA.map(data=>
+                    <NftCard className="nftcard__regular bronze"/>
+                    <NftCard className="nftcard__regular silver"/>
+                    <NftCard className="nftcard__regular gold"/>
 
-            <section style={{ display:'flex', justifyContent:'center' }} >
+            </div>
 
-                <NftCard publisher={data.publisher}  currency={data.price} price={data.price}randomBg={random()} src={data.url} title={data.title} />
+        </section>
 
-            </section>
 
-        )   :
-            <>
+                <section className="wrapper__secondsection">
 
-            <section>
+                    <NftCard className="nftcard__black"/>
+                    
+                </section>
 
-                {DATA.slice(0,3).map(data => 
+            </>
+                :
+                <>
+                <section className="wrapper__firstsection">
+                    
+                <NftCard que="left" className="nftcard__regular bronze"/>
 
-                <NftCard publisher={data.publisher} currency={data.price} price={data.price}randomBg={random()} src={data.url} title={data.title}/>
+                </section>
 
-                )}
+                <section className="wrapper__firstsection">
 
-            </section>
+                <NftCard className="nftcard__regular silver"/>
 
-           { DATA.slice(3).map(data => 
-            <section style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(1,1,1,1) 0%, rgba(12,17,16,1) 86%, rgba(14,21,18,1) 97%)"}}>
+                </section>
 
-                <NftCard publisher={data.publisher} currency={data.price} price={data.price}randomBg={random()} title={data.title} src={data.url}/>
+                <section className="wrapper__firstsection">
 
-            </section>
+                <NftCard className="nftcard__regular gold"/>
+                                    
+                </section>
+
+                <section className="wrapper__secondsection">
+
+                <NftCard className="nftcard__black"/>
+                                    
+                </section>
+                </>
             
-            )}
-
-             </>
-
-}
-      </div>
+            }
+        </div>
     )
 
 }
-
 
 export default Home

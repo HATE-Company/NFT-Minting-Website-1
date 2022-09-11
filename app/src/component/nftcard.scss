@@ -1,0 +1,353 @@
+.nftcard{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    z-index: 13213;
+    border-radius: 18px;
+    
+    
+    &__regular{
+        
+        display: flex;
+        align-items: center;
+        border-radius: 18px;
+        
+        &:hover{
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+            
+        }
+        
+        & .bgimg{
+            
+            border-radius: 18px;
+            
+        }
+        
+        //NFT PRICE
+        & h1{
+            position: absolute;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto;
+            width: fit-content;
+            top: 28.5rem; 
+            z-index: 1;
+            color: white;
+        }
+    }
+}
+
+//SHADOW EFFECT
+.silvershadow{
+    height: 275px;
+    width: 170px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+
+    top: 7.2rem;
+
+}
+
+.bronzeshadow{
+    
+    height: 265px;
+    width: 170px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 7.2rem;
+
+}
+
+.goldshadow{
+
+    
+    height: 265px;
+    width: 170px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 7.2rem;
+
+
+}
+
+
+
+//Monolith imgs 
+
+
+
+.monolith__img__silver{
+    position: relative;
+    z-index: 2;
+    transform: scale(0.9);
+    top: -0.5rem;
+
+
+    &:hover{
+
+        transform: scale(1);
+        
+    }
+}
+
+.monolith__img{
+   
+    transform: scale(0.9);
+
+  
+}
+.monolith__img__black{
+
+    position: relative;
+    z-index: 2;
+    bottom: -0.2rem;
+    border-radius: 14px;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+
+    &:hover{
+        .bgcardblack{
+            display: none;
+        }
+    }
+    &:hover + .rgb2::after{
+
+        background:linear-gradient(45deg,
+        #624c63 0%,
+        #c18d91 10%,
+        #fad5ba 20%,
+        #e6d1a2 30%,
+        #71aaa1 40%,
+        #09585f 50%
+        )
+        repeat 0% 0% / 300% 100%;
+        }
+
+
+}
+
+.monolith__img__wrapper:hover + .silvershadow {
+
+    box-shadow: 0px 0px 20px 20px rgba(204,250,242,1);
+
+}
+
+.monolith__img__wrapper:hover + .goldshadow{
+
+    box-shadow: 0px 0px 20px 20px #f5f68c;
+
+}
+.monolith__img__wrapper:hover .monolith__img{
+
+    transform: scale(1);
+
+}
+
+.monolith__img__wrapper__black:hover .monolith__img__black{
+
+    transform: scale(1);
+
+}
+
+.monolith__img__wrapper:hover .monolith__img__silver{
+
+    transform: scale(1);
+
+}
+
+.monolith__img__wrapper:hover + .bronzeshadow{
+
+    box-shadow: 0px 0px 20px 20px #f4bf86;
+
+}
+    
+//BLACK CARD
+.bgcardblack{
+
+    box-shadow: 3px 1px 40px 5px #02d8cd;
+    border-radius: 18px;
+
+   
+
+}
+.rgb2:hover{
+    box-shadow:3px 1px 80px 15px #02d8cd;
+    border-radius: 20px;
+}
+//BUTTONS
+
+.button{
+
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    bottom: 1.8rem; 
+
+}
+
+.blackbutton{
+
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    bottom: 2rem; 
+
+}
+
+.blacktitle{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: fit-content;
+    color: white;
+    z-index: 1;
+    bottom: 4.5rem; 
+}
+
+
+
+
+
+.rgb::after{
+
+    content: "";
+    background: "";
+    position: absolute;
+    inset: -5px;
+    filter: blur(8px);
+    border-radius: 16px;
+    animation: rgb 6s linear infinite;
+    z-index: -1;
+}
+
+.rgb2::after{
+    content: "";
+    background: "";
+    position: absolute;
+    inset: -5px;
+    filter: blur(3px);
+    border-radius: 16px;
+    animation: rgb 6s linear infinite;
+    z-index: -1;
+}
+
+.nftcard:hover{
+
+    .rgb::after{
+
+    background:linear-gradient(45deg,
+    #624c63 0%,
+    #c18d91 10%,
+    #fad5ba 20%,
+    #e6d1a2 30%,
+    #71aaa1 40%,
+    #09585f 50%
+    )
+    repeat 0% 0% / 300% 100%;
+    }
+
+}
+
+
+//TILT
+.monolith__img__wrapper{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 4.2rem;
+    z-index: 2;
+    padding: 0!important;
+
+}
+
+.monolith__img__wrapper__black{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 3rem;
+    z-index: 2;
+    pointer-events: inherit;
+
+    padding: 0!important;
+
+}
+
+
+
+.monolith__shadow{
+    position: absolute;
+    height: 360px;
+    width: 280px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 3.2rem;
+    z-index: 1;
+    padding: 0!important;
+
+}
+
+@keyframes rgb {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    10% {background-position: 0% 50%;}
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+
+    .nftcard{
+
+        transform: scale(0.5);
+    }
+    
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+
+    .nftcard{
+
+        transform: scale(0.8);
+    }
+    
+}
+
+
+@media (min-width: 501px) and (max-width: 1000px) {
+
+    .nftcard{
+
+        &__regular{
+            
+          transform: scale(0.7);
+
+        }
+    }
+    
+}
+
+
