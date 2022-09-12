@@ -1,3 +1,8 @@
+@font-face {font-family: "Herculanum"; src: url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.eot"); src: url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.woff") format("woff"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.svg#Herculanum") format("svg"); }
+
+html{
+    font-family: 'Herculanum';
+}
 .nftcard{
     position: relative;
     width: max-content;
@@ -51,6 +56,7 @@
     transform: scale(0.8);
     top: 1.8rem;
     visibility: hidden;
+    transition: all 0s ease;
 }
 
 
@@ -178,13 +184,29 @@
 
 
 .blackbutton{
-
     position: absolute;
+    width: 200px;
+    height: 75px;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    bottom: 2rem; 
+    bottom: 2.5rem; 
+    z-index: 1231;
+    background: linear-gradient(90deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 89%);
+    box-shadow: 0px 12px 15px -5px #07c5c7;
+    border-radius: 50px;
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: default;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,29,29,1) 64%);
+    &:hover{
+        bottom: 2rem;
+        box-shadow: none!important;
+    }
 
 }
 

@@ -1,6 +1,6 @@
 import "./nftcard.scss"
 import Tilt from "react-parallax-tilt"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const NftCard = (props) => {
 let rgbState = 'rgb'
@@ -76,11 +76,7 @@ const test = (e)=> {
             </div>
 
                 
-                <Tilt 
-        
-                transitionSpeed={1000}
-                onMove={test}
-                gyroscope={true}  tiltMaxAngleX="5" className="monolith__img__wrapper" scale={1.1} >
+                <Tilt onMove={test} tiltMaxAngleX="5" className="monolith__img__wrapper" scale={1.1} >
 
                 <img  alt="" className="monolith__img__silver" src={require("../assets/silvermonolith__desktop.png")}/>
                 <div style={{
@@ -123,7 +119,6 @@ const test = (e)=> {
 
                 <>
 
-                <img alt="" className="blackbutton"src={require("../assets/blackbutton.png")}/>
 
                 <Tilt tiltMaxAngleX="5" className="monolith__img__wrapper__black"> 
 
@@ -132,6 +127,9 @@ const test = (e)=> {
                 <div className="rgb2"></div>
 
                 </Tilt>
+                <div className="blackbutton">
+                    <h1>BLACK 399$</h1>
+                </div>
 
                 </>
             
