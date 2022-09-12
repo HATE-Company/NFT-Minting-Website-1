@@ -1,16 +1,32 @@
 import "./nftcard.scss"
 import Tilt from "react-parallax-tilt"
+import { useEffect, useState } from "react"
+
 const NftCard = (props) => {
 let rgbState = 'rgb'
 if(props.className.includes('black')){
     rgbState = 'rgb2'
 }
+const [shadowY, setShadowY] = useState("")
+
+const [shadowX, setShadowX] = useState("")
+
+const test = (e)=> {
+    setShadowY(e.tiltAngleYPercentage<0?
+        Math.abs(e.tiltAngleYPercentage)
+        *0.1:-Math.abs(e.tiltAngleYPercentage)*0.1)
+
+        setShadowX(e.tiltAngleXPercentage<0?
+            -Math.abs(e.tiltAngleXPercentage)
+            *0.1:Math.abs(e.tiltAngleXPercentage)*0.1)
+
+}
+
     return(
 
         <div className="nftcard">
 
         <div className={props.className +" "+rgbState}>
-            <div className="buttontest"></div>
 
         {/* Setting Card BG */}
         
@@ -19,10 +35,7 @@ if(props.className.includes('black')){
                 <img alt="" className="bgcardblack"src={require("../assets/blackbg__desktop.png")}/>
 
                 :
-                props.className.includes('bronze')?
-                <img alt="" className="bgimg__bronze"src={require("../assets/bgalternate__right.png")}/>
 
-                :
                 <img alt="" className="bgimg"src={require("../assets/bronzenft__bg.png")}/>}
 
         {/* Bronze Card */}
@@ -30,14 +43,21 @@ if(props.className.includes('black')){
             {props.className.includes('bronze')&& 
                 <>
 
-                <Tilt  className="monolith__img__wrapper" tiltMaxAngleX="5">
+                <div className="button" style={{
+                boxShadow: '0px 12px 15px -5px #f4bf86'
+            }} >
+                    <h1>BRONZE 9$</h1>
+                </div>
+
+                <Tilt onMove={test} className="monolith__img__wrapper" tiltMaxAngleX="5" scale={1.1}>
+
                         <img alt="" className="monolith__img" src={require("../assets/bronzemonolith__desktop.png")}/>
+                        <div style={{
+                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px #f4bf86`
+            }} className="monolithshadow"></div>
+
                 </Tilt>
-
-                <div className="bronzeshadow"></div>
-
-                <img alt="" className="button" src={require("../assets/bronzebutton.png")} />
-
+              
 
                 </>
             }
@@ -45,17 +65,29 @@ if(props.className.includes('black')){
         {/* Silver Card */}
 
             {props.className.includes('silver')&&
+
                 <>
 
-                <img alt="" className="button" src={require("../assets/silverbutton.png")} />
+            <div className="button" style={{
+                boxShadow: '0px 12px 15px -5px rgba(204,250,242,1)'
+            }}>
+                <h1>SILVER 4$</h1>
 
-                <Tilt tiltMaxAngleX="5" className="monolith__img__wrapper">
+            </div>
 
-                <img alt="" className="monolith__img__silver" src={require("../assets/silvermonolith__desktop.png")}/>
+                
+                <Tilt 
+        
+                transitionSpeed={1000}
+                onMove={test}
+                gyroscope={true}  tiltMaxAngleX="5" className="monolith__img__wrapper" scale={1.1} >
 
+                <img  alt="" className="monolith__img__silver" src={require("../assets/silvermonolith__desktop.png")}/>
+                <div style={{
+                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px rgba(204,250,242,1)`
+            }} className="monolithshadow"></div>
                 </Tilt>
 
-                <div className="silvershadow"></div>
 
                 </>
              }
@@ -65,16 +97,22 @@ if(props.className.includes('black')){
             {props.className.includes('gold')&& 
 
                 <>
+                <div className="button" style={{
+                    boxShadow: '0px 12px 15px -5px #f5f68c'
+                }}>
+                    <h1>GOLD 49$</h1>
 
-                <img alt="" className="button" src={require("../assets/goldbutton.png")} />
+                </div>
 
-                <Tilt tiltMaxAngleX="5" className="monolith__img__wrapper">
+                <Tilt onMove={test} tiltMaxAngleX="5" className="monolith__img__wrapper" scale={1.1}>
 
                 <img alt="" className="monolith__img" src={require("../assets/goldmonolith__desktop.png")}/>
 
+                <div style={{
+                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px #f5f68c`
+            }} className="monolithshadow">
+                </div>
                 </Tilt>
-
-                <div className="goldshadow"></div>
 
                 </>
             }

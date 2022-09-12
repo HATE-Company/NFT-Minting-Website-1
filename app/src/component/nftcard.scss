@@ -5,7 +5,6 @@
     z-index: 13213;
     border-radius: 18px;
     
-    
     &__regular{
         
         display: flex;
@@ -35,88 +34,55 @@
             
         }
         
-        //NFT PRICE
-        & h1{
-            position: absolute;
-            left: 0; 
-            right: 0; 
-            margin-left: auto; 
-            margin-right: auto;
-            width: fit-content;
-            top: 28.5rem; 
-            z-index: 1;
-            color: white;
-        }
+     
     }
 }
 
 //SHADOW EFFECT
-.silvershadow{
-    height: 275px;
-    width: 170px;
+
+.monolithshadow{
+    height: 285px;
+    width: 180px;
     position: absolute;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-
-    top: 7.2rem;
-
+    transform: scale(0.8);
+    top: 1.8rem;
+    visibility: hidden;
 }
-
-.bronzeshadow{
-    
-    height: 265px;
-    width: 170px;
-    position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-    top: 7.2rem;
-
-}
-
-.goldshadow{
-
-    
-    height: 265px;
-    width: 170px;
-    position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-    top: 7.2rem;
-
-
-}
-
 
 
 //Monolith imgs 
 
 
-
 .monolith__img__silver{
+
     position: relative;
     z-index: 2;
     transform: scale(0.9);
     top: -0.5rem;
+    display: block;
 
 
+    &:hover + .monolithshadow{
 
-    &:hover{
-
-        transform: scale(1);
+       visibility: visible;
         
     }
 }
 
 .monolith__img{
-   
+   position: relative;
+   z-index: 2;
     transform: scale(0.9);
 
+    &:hover + .monolithshadow{
+
+       visibility: visible;
+        
+    }
   
 }
 .monolith__img__black{
@@ -129,9 +95,7 @@
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 
     &:hover{
-        .bgcardblack{
-            display: none;
-        }
+       transform: scale(1);
     }
     &:hover + .rgb2::after{
 
@@ -150,7 +114,7 @@
 }
 
 
-//Shadow Activate
+// Shadow Activate
 
 
 // .monolith__img__wrapper:hover + .silvershadow {
@@ -164,55 +128,54 @@
     box-shadow: 0px 0px 20px 20px #f5f68c;
 
 }
-.monolith__img__wrapper:hover .monolith__img{
 
-    transform: scale(1);
 
-}
 
-.monolith__img__wrapper__black:hover .monolith__img__black{
-
-    transform: scale(1);
-
-}
-
-.monolith__img__wrapper:hover .monolith__img__silver{
-
-    transform: scale(1);
-
-}
-
-.monolith__img__wrapper:hover + .bronzeshadow{
-
-    box-shadow: 0px 0px 20px 20px #f4bf86;
-
-}
-    
 //BLACK CARD
+
 .bgcardblack{
 
     box-shadow: 3px 1px 40px 5px #02d8cd;
     border-radius: 18px;
 
-   
-
 }
+
 .rgb2:hover{
+
     box-shadow:3px 1px 80px 15px #02d8cd;
     border-radius: 20px;
 }
+
+
 //BUTTONS
 
 .button{
 
     position: absolute;
+    width: 200px;
+    height: 75px;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    bottom: 1.8rem; 
+    bottom: 2.5rem; 
+    z-index: 1231;
+    background: linear-gradient(90deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 89%);
+    border-radius: 50px;
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: default;
+
+    &:hover{
+        bottom: 2rem;
+        box-shadow: none!important;
+    }
 
 }
+
 
 .blackbutton{
 
@@ -225,28 +188,9 @@
 
 }
 
-.buttontest{
-    width:204px;
-    height: 75px;
-    position: absolute;
-    background-color: red;
-    z-index: 23;
-    border-radius: 50px;
-    bottom: 2.35rem; 
-    opacity: 0.2;
-
-
-
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-
-
 
 .blacktitle{
+
     position: absolute;
     left: 0; 
     right: 0; 
@@ -256,10 +200,8 @@
     color: white;
     z-index: 1;
     bottom: 4.5rem; 
+
 }
-
-
-
 
 
 .rgb::after{
@@ -316,6 +258,10 @@
     top: 4.2rem;
     z-index: 2;
     padding: 0!important;
+    &:hover{
+        
+
+    }
 
 }
 
@@ -330,8 +276,8 @@
     top: 3rem;
     z-index: 2;
     pointer-events: inherit;
-
     padding: 0!important;
+   
 
 }
 
