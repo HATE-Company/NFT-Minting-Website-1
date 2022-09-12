@@ -6,17 +6,23 @@ if(props.className.includes('black')){
     rgbState = 'rgb2'
 }
     return(
-        
+
         <div className="nftcard">
 
         <div className={props.className +" "+rgbState}>
+            <div className="buttontest"></div>
+
         {/* Setting Card BG */}
+        
             {props.className.includes('black')?
 
                 <img alt="" className="bgcardblack"src={require("../assets/blackbg__desktop.png")}/>
 
                 :
-                
+                props.className.includes('bronze')?
+                <img alt="" className="bgimg__bronze"src={require("../assets/bgalternate__right.png")}/>
+
+                :
                 <img alt="" className="bgimg"src={require("../assets/bronzenft__bg.png")}/>}
 
         {/* Bronze Card */}
@@ -76,6 +82,7 @@ if(props.className.includes('black')){
         {/* Black Card */}
 
             {props.className.includes('black')&& 
+
                 <>
 
                 <img alt="" className="blackbutton"src={require("../assets/blackbutton.png")}/>

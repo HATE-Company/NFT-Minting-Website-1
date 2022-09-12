@@ -15,11 +15,23 @@
         &:hover{
             box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
             
+            
         }
+
+        &:hover .bgimg{
+            opacity: 0.9;
+            
+        }
+       
         
         & .bgimg{
             
             border-radius: 18px;
+
+            &__bronze{
+                transform: scale(1.02);
+            }
+            
             
         }
         
@@ -93,6 +105,7 @@
     top: -0.5rem;
 
 
+
     &:hover{
 
         transform: scale(1);
@@ -136,11 +149,15 @@
 
 }
 
-.monolith__img__wrapper:hover + .silvershadow {
 
-    box-shadow: 0px 0px 20px 20px rgba(204,250,242,1);
+//Shadow Activate
 
-}
+
+// .monolith__img__wrapper:hover + .silvershadow {
+
+//     box-shadow: 0px 0px 20px 20px rgba(204,250,242,1);
+
+// }
 
 .monolith__img__wrapper:hover + .goldshadow{
 
@@ -208,6 +225,27 @@
 
 }
 
+.buttontest{
+    width:204px;
+    height: 75px;
+    position: absolute;
+    background-color: red;
+    z-index: 23;
+    border-radius: 50px;
+    bottom: 2.35rem; 
+    opacity: 0.2;
+
+
+
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+
+
 .blacktitle{
     position: absolute;
     left: 0; 
@@ -268,6 +306,7 @@
 //TILT
 .monolith__img__wrapper{
     position: absolute;
+
     height: fit-content;
     width: fit-content;
     left: 0; 
@@ -298,19 +337,6 @@
 
 
 
-.monolith__shadow{
-    position: absolute;
-    height: 360px;
-    width: 280px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-    top: 3.2rem;
-    z-index: 1;
-    padding: 0!important;
-
-}
 
 @keyframes rgb {
     0% {background-position: 0% 50%;}
