@@ -1,5 +1,11 @@
 @font-face {font-family: "Herculanum"; src: url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.eot"); src: url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.woff") format("woff"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/002b944b211d383987536f1ecf684bca.svg#Herculanum") format("svg"); }
 
+$goldshadow: #f5f68c;
+$silvershadow: rgba(204,250,242,1);
+$bronzeshadow: #f4bf86;
+$bronzeshadosw:rgb(255, 168, 75);
+
+
 html{
     font-family: 'Herculanum';
 }
@@ -11,19 +17,28 @@ html{
     border-radius: 18px;
     
     &__regular{
-        
+
+        box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.9);
         display: flex;
         align-items: center;
         border-radius: 18px;
         
-        &:hover{
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        &:hover .monolithshadow{
+            visibility: visible;
+            z-index: 12;
             
+        }
+        &:hover .monolithshadow-bronze{
+            visibility: visible;
+            z-index: 12;
+            
+        }
+        &:hover .monolithshadow-silver{
+            visibility: visible;
             
         }
 
-        &:hover .bgimg{
-            opacity: 0.9;
+        &:hover .fligran{
             
         }
        
@@ -42,23 +57,87 @@ html{
      
     }
 }
+//Fligran
+
+.fligran{
+    position: absolute;
+    height: 100%;
+    border-radius: 18px;
+    width: 100%;
+    background-image: url("../assets/bgalternate__right.png");
+    z-index: 123;
+    visibility: hidden;
+    transition: all 0s ease;
+    pointer-events: none;
+    
+
+}
+.fligran2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    z-index: 123;
+    transition: all 0s ease;
+    pointer-events: none;
+    visibility:hidden;
+    background-image: url("../assets/bgalternate__right.png");
+}
+
+.nftcard:hover .fligran{
+    z-index: 123;
+   visibility: visible;
+
+}
+.nftcard:hover .fligran2{
+    z-index: 123;
+   visibility: visible;
+
+}
 
 //SHADOW EFFECT
 
 .monolithshadow{
-    height: 285px;
-    width: 180px;
+    height: 245px;
+    width: 150px;
     position: absolute;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
     transform: scale(0.8);
-    top: 1.8rem;
+    top: 2rem;
     visibility: hidden;
     transition: all 0s ease;
 }
 
+.monolithshadow-bronze{
+    height: 245px;
+    width: 170px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    transform: scale(0.8);
+    top: 2.3rem;
+    visibility: hidden;
+    transition: all 0s ease;
+}
+
+.monolithshadow-silver{
+    height: 235px;
+    width: 150px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    transform: scale(0.8);
+    top: 2.3rem;
+    visibility: hidden;
+    transition: all 0s ease;
+}
 
 //Monolith imgs 
 
@@ -67,8 +146,6 @@ html{
 
     position: relative;
     z-index: 2;
-    transform: scale(0.9);
-    top: -0.5rem;
     display: block;
 
 
@@ -77,12 +154,17 @@ html{
        visibility: visible;
         
     }
+    
+    &:hover + .monolithshadow-silver{
+
+        visibility: visible;
+         
+     }
 }
 
 .monolith__img{
    position: relative;
-   z-index: 2;
-    transform: scale(0.9);
+   z-index: 135;
 
     &:hover + .monolithshadow{
 
@@ -154,8 +236,83 @@ html{
 
 
 //BUTTONS
+.buttonwrapper{
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    bottom: 2rem; 
+    z-index: 1902;
+    background:linear-gradient(135deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 89%);
+    background-color: red;
+    animation: rgb 1s linear infinite;
 
-.button{
+}
+h1{
+    position: relative;
+    pointer-events: none;
+    z-index: 31231211231223211;
+}
+
+.btn, .btn2{
+    position: absolute;
+    width :300px;
+    height :100px;
+    font-size: 30px;
+    text-align: center;
+    line-height :100px;
+    color: rgba(255,255,255,0.9);
+    border-radius: 50px;
+    background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+    background-size :600%;
+    animation: rgb 16s linear infinite;
+}
+.btn2{
+    position :absolute;
+    margin-top :-70px;
+    z-index: -1;
+    filter :blur(30px);
+    opacity: 0.8;
+}
+
+
+
+.buttonbronze{
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    bottom: 0rem; 
+    z-index: 1231;
+    background: linear-gradient(90deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 69%);
+    border-radius: 50px;
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    cursor: default;
+    animation: rgb 1s linear infinite;
+
+   
+    &:hover{
+
+        box-shadow: 0px 0px 20px 2px $bronzeshadow!important;
+        
+    }
+   
+    
+
+}
+
+.buttonbronze-gradient,.buttonbronze-gradient{
 
     position: absolute;
     width: 200px;
@@ -164,7 +321,106 @@ html{
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    bottom: 2.5rem; 
+    bottom: 0rem; 
+    z-index: 13451531;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.548) 0%, rgba(255, 255, 255, 0.068) 89%);
+    border-radius: 50px;
+    background-size: 600%;
+    animation: rgb 6s linear infinite;
+    visibility: hidden;
+    
+}
+
+.buttonwrapper__bronze:hover{
+
+    .buttonbronze-gradient{
+        visibility: visible;
+    }
+
+}
+
+.buttonwrapper__silver:hover{
+
+    .buttonbronze-gradient{
+        visibility: visible;
+    }
+
+}
+.buttonwrapper__gold:hover{
+
+    .buttonbronze-gradient{
+        visibility: visible;
+    }
+
+}
+
+
+.buttonwrapper__bronze, .buttonwrapper__silver, .buttonwrapper__gold{
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    bottom: 3rem;
+    margin-right: auto;
+    z-index: 1231;
+    background: linear-gradient(90deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 89%);
+    border-radius: 50px;
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: default;
+    text-decoration: none;
+
+    &:hover {
+    }
+}
+.buttonsilver{
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    bottom: 0rem;
+
+    margin-right: auto;
+    z-index: 1231;
+    background: linear-gradient(90deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 89%);
+    border-radius: 50px;
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: default;
+    z-index: 11244121424124;
+  & h1 {
+    bottom: 0;
+    pointer-events: none;
+  }
+    &:hover{
+    box-shadow: 0px 0px 20px 2px rgba(204, 250, 242, 0.473)!important;
+
+        
+    
+    }
+   
+    
+
+}
+.buttongold{
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    bottom: 0rem; 
     z-index: 1231;
     background: linear-gradient(90deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 89%);
     border-radius: 50px;
@@ -176,9 +432,12 @@ html{
     cursor: default;
 
     &:hover{
-        bottom: 2rem;
-        box-shadow: none!important;
+
+        box-shadow: 0px 0px 20px 2px $goldshadow!important;
+
     }
+   
+    
 
 }
 
@@ -225,18 +484,31 @@ html{
 
 }
 
-
+//realrgb
 .rgb::after{
 
     content: "";
-    background: "";
+    background:linear-gradient(-45deg,
+    #ef00fa 0%,
+    #fc2c71 10%,
+    #fdd0af 20%,
+    #ffc000 30%,
+    #ffe400 40%,
+    #c7ff00 50%,
+    #00ecff 60%,
+    #00ffd7 70%,
+    #f000ff 80%,
+    #e604ee 90%
+    )
+    repeat 0% 0% / 300% 100%;
     position: absolute;
     inset: -5px;
     filter: blur(8px);
     border-radius: 16px;
-    animation: rgb 6s linear infinite;
+    animation: rgb 8s linear infinite;
     z-index: -1;
 }
+
 
 .rgb2::after{
     content: "";
@@ -249,20 +521,34 @@ html{
     z-index: -1;
 }
 
+// #ef00fa 0%,
+// #fc2c71 10%,
+// #fdd0af 20%,
+// #ffc000 30%,
+// #ffe400 40%,
+// #c7ff00 50%,
+// #00ffd7 60%,
+// #f000ff 70
 .nftcard:hover{
 
     .rgb::after{
 
-    background:linear-gradient(45deg,
-    #624c63 0%,
-    #c18d91 10%,
-    #fad5ba 20%,
-    #e6d1a2 30%,
-    #71aaa1 40%,
-    #09585f 50%
-    )
-    repeat 0% 0% / 300% 100%;
+   
+
+
+    transform: scale(1.03);
     }
+
+    .rgb-test-2{
+       background: 
+       red;}
+       
+        .rgb-test::after{
+            background:
+            #f4bf86
+         
+            }
+    
 
 }
 
@@ -277,8 +563,8 @@ html{
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    top: 4.2rem;
-    z-index: 2;
+    top: 3.2rem;
+    z-index: 245654665;
     padding: 0!important;
     &:hover{
         
@@ -307,6 +593,12 @@ html{
 
 
 @keyframes rgb {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    10% {background-position: 0% 50%;}
+}
+
+@keyframes bg {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     10% {background-position: 0% 50%;}
@@ -342,6 +634,36 @@ html{
         }
     }
     
+}
+
+
+/* TEST SECTION */
+
+
+.rgb-test::after{
+
+        content: "";
+        background: "";
+        position: absolute;
+        inset: -5px;
+        filter: blur(8px);
+        border-radius: 16px;
+        animation: rgb 6s linear infinite;
+        z-index: -1;
+
+}
+
+.rgb-test-2::after{
+
+    content: "";
+    background: "";
+    position: absolute;
+    inset: -5px;
+    filter: blur(8px);
+    border-radius: 16px;
+    animation: rgb 6s linear infinite;
+    z-index: -1;
+
 }
 
 

@@ -1,12 +1,22 @@
 import "./nftcard.scss"
 import Tilt from "react-parallax-tilt"
 import { useState } from "react"
+import MenuPack from "./Menu/MenuPack"
 
 const NftCard = (props) => {
-let rgbState = 'rgb'
+let rgbState = 'rgb-test'
+
 if(props.className.includes('black')){
     rgbState = 'rgb2'
 }
+
+if(props.rgb=='test'){
+    if(props.type=='bronze'){
+        rgbState ='rgb-test-2'
+    }
+}
+
+
 const [shadowY, setShadowY] = useState("")
 
 const [shadowX, setShadowX] = useState("")
@@ -22,11 +32,25 @@ const test = (e)=> {
 
 }
 
+const [isOpen, setIsOpen] = useState(false)
+
+const handleIsOpen = () => {
+  setIsOpen(!isOpen)
+}
+
+const closeSideBar = () => {
+  setIsOpen(false)
+}
+
     return(
 
-        <div className="nftcard">
+        <div className="nftcard" style={{
 
-        <div className={props.className +" "+rgbState}>
+        }}>
+            
+            <div className="fligran"></div>
+
+        <div className={props.className +" "+'rgb'}>
 
         {/* Setting Card BG */}
         
@@ -42,19 +66,29 @@ const test = (e)=> {
 
             {props.className.includes('bronze')&& 
                 <>
+                
+                <a href="https://www.metamask.io" target={"__blank"} className="buttonwrapper__bronze">
 
-                <div className="button" style={{
-                boxShadow: '0px 12px 15px -5px #f4bf86'
-            }} >
-                    <h1>BRONZE 9$</h1>
+                    <h1>BRONZE &ensp;$9</h1>
+
+                <div className="buttonbronze" style={{
+                    boxShadow:'0px 12px 15px -5px #f4bf86'
+                }} >
+                    <div className="buttonbronze-gradient">
+                        <div className="buttonbronze-gradient2">
+
+                        </div>
+
+                    </div>
                 </div>
+                </a>
 
                 <Tilt onMove={test} className="monolith__img__wrapper" tiltMaxAngleX="5" scale={1.1}>
 
                         <img alt="" className="monolith__img" src={require("../assets/bronzemonolith__desktop.png")}/>
                         <div style={{
-                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px #f4bf86`
-            }} className="monolithshadow"></div>
+                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 25px #e604ee`
+            }} className="monolithshadow-bronze"></div>
 
                 </Tilt>
               
@@ -67,21 +101,29 @@ const test = (e)=> {
             {props.className.includes('silver')&&
 
                 <>
+            <a href="https://www.metamask.io" target={"__blank"} className="buttonwrapper__silver">
 
-            <div className="button" style={{
+            <div className="buttonsilver" style={{
                 boxShadow: '0px 12px 15px -5px rgba(204,250,242,1)'
             }}>
-                <h1>SILVER 4$</h1>
+                <div className="buttonbronze-gradient">
+                        <div className="buttonbronze-gradient2">
+
+                        </div>
+
+                    </div>
+                <h1>SILVER &ensp;$29</h1>
 
             </div>
+                </a>
 
                 
                 <Tilt onMove={test} tiltMaxAngleX="5" className="monolith__img__wrapper" scale={1.1} >
 
                 <img  alt="" className="monolith__img__silver" src={require("../assets/silvermonolith__desktop.png")}/>
                 <div style={{
-                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px rgba(204,250,242,1)`
-            }} className="monolithshadow"></div>
+                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px #e604ee`
+            }} className="monolithshadow-silver"></div>
                 </Tilt>
 
 
@@ -93,19 +135,30 @@ const test = (e)=> {
             {props.className.includes('gold')&& 
 
                 <>
-                <div className="button" style={{
+                <a href="https://www.metamask.io" target={"__blank"} className="buttonwrapper__gold">
+
+                <div className="buttongold" style={{
                     boxShadow: '0px 12px 15px -5px #f5f68c'
                 }}>
-                    <h1>GOLD 49$</h1>
+
+                    <div className="buttonbronze-gradient">
+                        <div className="buttonbronze-gradient2">
+
+                        </div>
+
+                    </div>
+                    
+                    <h1>GOLD &ensp;$49</h1>
 
                 </div>
+                    </a>
 
                 <Tilt onMove={test} tiltMaxAngleX="5" className="monolith__img__wrapper" scale={1.1}>
 
                 <img alt="" className="monolith__img" src={require("../assets/goldmonolith__desktop.png")}/>
 
                 <div style={{
-                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px #f5f68c`
+                    boxShadow:`${shadowY}px ${(shadowX)}px 20px 30px #e604ee`
             }} className="monolithshadow">
                 </div>
                 </Tilt>

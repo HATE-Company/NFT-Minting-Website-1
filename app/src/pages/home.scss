@@ -1,7 +1,9 @@
+
 .wrapper{
     height: 100vh;
     overflow: x hidden;
     overflow:auto;
+    position: relative;
     
     scroll-snap-type: y mandatory;
 
@@ -14,12 +16,15 @@
         position: relative;
         height: 100vh;
         background-image: url("../assets/normalbg.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
         display: flex;
         align-items: center;
         justify-content: center;
         scroll-snap-align: start;
 
-
+     
     }
 
     &__secondsection{
@@ -29,13 +34,283 @@
         scroll-snap-align: start;
         align-items: center;
         justify-content: center;
-        background-image: url("../assets/blackbg.png");
+        background-image: url("../assets/welcoming.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
 
     }
 
     &__3card{
         display: flex;
         justify-content: space-evenly;
-        width: 78%;
+        width: 75%;
+    }
+}
+
+.title{
+    position: absolute;
+    color: white;
+    width: fit-content;
+    bottom: 82.5%;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 123123123;
+    font-size: 75px;
+    transform: scale(0.9)
+}
+
+.nft-pass{
+    font-size: 34px;
+}
+
+
+.menucontainer{
+    display: flex;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 4.5rem;
+    z-index: 1290847204891273312;
+    right: 4.5rem;
+}
+
+
+.downarrow, .downarrow:before{
+
+  position: absolute;
+  left: 50%;
+
+}
+
+.downarrow{
+
+  width: 40px;
+  height: 40px;
+  top: 90%;
+  margin: -20px 0 0 -20px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  -webkit-transform: rotate(45deg);
+  z-index: 41941823;
+
+}
+
+  
+.downarrow:before{
+
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+
+  }
+
+@keyframes arrow{
+  0%{
+    opacity: 1}
+ 100% {
+    opacity: 0;
+    transform: translate(-10px, -10px)}
+}
+
+@media screen and (max-width: 800px){
+    
+    .title{
+
+        position: absolute;
+        color: white;
+        width: fit-content;
+        bottom: 83.5%;
+        top: 1.3rem;
+        right: 100%;
+        left: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+        font-size: 34px;
+
+    }
+
+    .nft-pass{
+
+        font-size: 18px;
+
+    }
+
+    .downarrow{
+        width: 20px;
+        height: 20px;
+        top: 960px;
+        left: 52.5%;
+        
+
+        &::before{
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .menucontainer{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+
+.wrapper__firstsection__welcoming{
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/welcoming.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+
+}
+
+
+.header{
+    
+    position: fixed;
+    z-index: 1414209831;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+
+.welcomingwrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 22rem;
+    margin: 0 auto;
+    transform: scale(0.9);
+   
+}
+
+.ctatext{
+    position: absolute;
+    bottom: 7.5rem;
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .welcomingwrapper{
+       
+       
+        
+    }
+    .menucontainer{
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 1380px) {
+    .welcomingwrapper{
+       
+       transform: scale(0.7);
+        
+    }
+    .menucontainer{
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 1013px) {
+    .welcomingwrapper{
+       
+       transform: scale(0.5);
+        
+    }
+    .menucontainer{
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 803px) {
+    .welcomingwrapper{
+       
+       transform: scale(0.4);
+        
+    }
+    .menucontainer{
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .welcomingwrapper{
+       
+       transform: scale(0.3);
+        
+    }
+    .menucontainer{
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+    .ctatext{
+        transform: scale(0.8);
+        font-weight: bolder;
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    .welcomingwrapper{
+       
+       transform: scale(0.2);
+        
+    }
+    .menucontainer{
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+    
+}
+
+
+.testimg{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 100%; /* Need a specific value to work*/
+    & img{
+        max-width: 100%;
+        max-height: 100%;
     }
 }

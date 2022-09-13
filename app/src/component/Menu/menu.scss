@@ -1,0 +1,157 @@
+.menu {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+
+    &__item {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bolder;
+
+        &:hover {
+            color: #FFA154;
+
+        }
+    }
+
+    &__lang {
+        display: flex !important;
+        justify-content: space-evenly;
+
+        & h1 {
+            width: max-content !important;
+        }
+       
+        &__active {
+            color: #FFA154;
+        }
+    }
+}
+
+
+.bm {
+    width: 1rem;
+
+    &-overlay {
+        position: relative !important;
+        background: transparent !important;
+    }
+
+    &-item-list {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 2.5rem;
+        height: 80%!important;
+        top: 8rem!important;
+
+    }
+
+
+    &-menu {
+        background: #131a1b;
+        align-items: flex-start;
+        text-align: center;
+        padding: 2.5em 1.5em 0;
+        font-size: 1.15em;
+        position: relative !important;
+        width: 100%;
+        color: #ffffff !important;
+        box-shadow: 0 -20px 20px 5px black;
+
+        &-wrap {
+            position: fixed !important;
+            top: 0rem;
+            right: 0px !important;
+            width: 22% !important;
+            height: 100% !important;
+            z-index: 4120983701791231!important;
+        }
+
+
+    }
+
+    &-cross {
+        background: #EEE9FF;
+        width: 40px !important;
+        height: 5px!important;
+        right: -15px !important;
+        top: 0.9rem;
+
+        &-button {
+            display: flex !important;
+            bottom: 1000px !important;
+            transform: size(5) !important;
+            top: 2.5rem !important;
+            right: 2.5rem!important;
+            width: 40px !important;
+            height: 30px !important;
+        }
+
+    }
+
+
+    &-burger {
+
+        &-button {
+
+            display: flex;
+            width: 32px;
+            height: 32px;
+            z-index: 3123321;
+        }
+
+        &-bars {
+
+            background-color: #EEE9FF;
+            border-radius: 15px;
+            width: 100%;
+            height: 5% !important;
+            z-index: 31208937129128!important;
+
+        }
+
+    }
+
+}
+.outercontainer{
+    color: white!important;
+
+    & h1 {
+        font-size: 38px;
+    }
+
+    & a {
+        margin-top: 5rem;
+        font-size: 26px;
+        cursor: default;
+        text-decoration: none;
+        letter-spacing: 0px!important;
+        color: white!important;
+
+        &:hover{
+                   
+            color: #e604ee!important;
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    
+    .bm-menu-wrap{
+        width: 100%!important;
+
+        & a {
+            margin-top: 4rem!important;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        & h1 {
+            font-size: 34px;
+        }
+    }
+}
