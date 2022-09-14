@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./menu.scss"
-import { fallDown as Menu } from "react-burger-menu"
+import { slide as Menu } from "react-burger-menu"
+import Hamburger from 'hamburger-react'
 const MenuPack = (props) => {
 
 
@@ -17,7 +18,12 @@ const MenuPack = (props) => {
 
     return(
       <div className="outercontainer">
-        <Menu isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
+        <div className="menuicon">
+
+        <Hamburger toggled={isOpen} toggle={setIsOpen}>
+        </Hamburger>
+        </div>
+        <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
 <h1>MENU</h1>
 <a href="https://www.linktr.ee/hateverse" target={"_blank"}>WHITE PAPER</a>
                    

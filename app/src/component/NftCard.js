@@ -1,20 +1,15 @@
 import "./nftcard.scss"
 import Tilt from "react-parallax-tilt"
 import { useState } from "react"
-import MenuPack from "./Menu/MenuPack"
 
 const NftCard = (props) => {
-let rgbState = 'rgb-test'
+let rgbState = 'rgb'
 
 if(props.className.includes('black')){
     rgbState = 'rgb2'
 }
 
-if(props.rgb=='test'){
-    if(props.type=='bronze'){
-        rgbState ='rgb-test-2'
-    }
-}
+
 
 
 const [shadowY, setShadowY] = useState("")
@@ -50,7 +45,7 @@ const closeSideBar = () => {
             
             <div className="fligran"></div>
 
-        <div className={props.className +" "+'rgb'}>
+        <div className={props.className +" "+rgbState}>
 
         {/* Setting Card BG */}
         
@@ -173,16 +168,19 @@ const closeSideBar = () => {
                 <>
 
 
-                <Tilt tiltMaxAngleX="5" className="monolith__img__wrapper__black"> 
-
+                <Tilt scale={1.1} tiltMaxAngleX="5" className="monolith__img__wrapper__black"> 
                 <img alt="" className="monolith__img__black" src={require("../assets/black__desktop.png")}/>
 
-                <div className="rgb2"></div>
+                <div className="rgb"></div>
 
                 </Tilt>
-                <div className="blackbutton">
+                <a href="https://www.metamask.io" target={"__blank"} className="blackbutton">
                     <h1>BLACK 399$</h1>
-                </div>
+                </a>
+                <div className="buttonbronze-gradient">
+                        <div className="buttonbronze-gradient2">
+                        </div>
+                    </div>
 
                 </>
             

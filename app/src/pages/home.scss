@@ -28,7 +28,7 @@
     }
 
     &__secondsection{
-
+        position: relative;
         display: flex;
         height: 100vh;
         scroll-snap-align: start;
@@ -44,7 +44,7 @@
     &__3card{
         display: flex;
         justify-content: space-evenly;
-        width: 75%;
+        width: 98.5%;
     }
 }
 
@@ -63,7 +63,7 @@
     align-items: flex-end;
     z-index: 123123123;
     font-size: 75px;
-    transform: scale(0.9)
+    transform: scale(0.8)
 }
 
 .nft-pass{
@@ -78,7 +78,7 @@
     height: 40px;
     top: 4.5rem;
     z-index: 1290847204891273312;
-    right: 4.5rem;
+    right: 6.5rem!important;
 }
 
 
@@ -86,6 +86,7 @@
 
   position: absolute;
   left: 50%;
+  z-index: 1;
 
 }
 
@@ -93,14 +94,13 @@
 
   width: 40px;
   height: 40px;
-  top: 90%;
+  top: 92%;
   margin: -20px 0 0 -20px;
   border-left: none;
   border-top: none;
   border-right: 2px #fff solid;
   border-bottom: 2px #fff solid;
   -webkit-transform: rotate(45deg);
-  z-index: 41941823;
 
 }
 
@@ -144,6 +144,7 @@
         margin-left: none;
         margin-right: none;
         font-size: 34px;
+        
 
     }
 
@@ -156,7 +157,6 @@
     .downarrow{
         width: 20px;
         height: 20px;
-        top: 960px;
         left: 52.5%;
         
 
@@ -205,9 +205,26 @@
     width: 100%;
     padding: 0 22rem;
     margin: 0 auto;
-    transform: scale(0.9);
+    transform: scale(0.8);
    
 }
+.welcomingnftnames{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 22rem;
+    margin: 0 auto;
+    transform: scale(0.95);
+    bottom: 13.5rem;
+    & img{
+        margin: 0 1.5rem;
+    }
+
+
+}
+
+
 
 .ctatext{
     position: absolute;
@@ -215,17 +232,32 @@
     font-size: 30px;
     font-weight: lighter;
     color: white;
+    z-index: 1231312;
 }
 
 @media screen and (max-width: 1000px) {
+
     .welcomingwrapper{
-       
-       
+        transform: scale(0.5)!important;
+        justify-content: space-evenly;
         
     }
+    .welcomingnftnames{
+
+    }
+    .title{
+        top: 2rem;
+        left:-23rem!important;
+    }
+
+    .welcomingnft{
+        transform: scale(0.8);
+
+    }
     .menucontainer{
-        top: 2.5rem;
-        right: 2.5rem;
+        top: 5%!important;
+        right: 2.5rem!important;
+        left: 85%;
     }
     
 }
@@ -237,36 +269,49 @@
        transform: scale(0.7);
         
     }
+    .welcomingnftnames{
+        bottom:15.5rem ;
+        transform: scale(0.7);
+    }
     .menucontainer{
         top: 2.5rem;
-        right: 2.5rem;
+        right: 2.5rem!important;
     }
     
 }
-
-@media screen and (max-width: 1013px) {
+@media screen and (max-height: 723px){
     .welcomingwrapper{
        
-       transform: scale(0.5);
-        
-    }
-    .menucontainer{
-        top: 2.5rem;
-        right: 2.5rem;
-    }
-    
+        transform: scale(0.5);
+         
+     }
 }
+
 
 @media screen and (max-width: 803px) {
     .welcomingwrapper{
-       
-       transform: scale(0.4);
+       position: absolute;
+       transform: scale(1);
+       width: 100%;
         
     }
-    .menucontainer{
-        top: 2.5rem;
-        right: 2.5rem;
+    .welcomingwrapper{
+        transform: scale(0.4);
     }
+    .welcomingnftnames{
+        bottom: 15rem!important;
+        transform: scale(0.4);
+
+
+    }
+    .title{
+        left: 5%!important;
+    }
+    .menucontainer{
+        top: 3%!important;
+        left: 90%;
+    }
+    
     
 }
 
@@ -276,11 +321,20 @@
        transform: scale(0.3);
         
     }
+    .welcomingnftnames{
+        bottom: 16rem!important;
+        transform: scale(0.3);
+    }
+    .title{
+        top: 2.5%;
+        left: 2%!important;
+    }
     .menucontainer{
-        top: 2.5rem;
-        right: 2.5rem;
+        top: 3%!important;
+        left: 86%!important;
     }
     .ctatext{
+        bottom: 15%!important;
         transform: scale(0.8);
         font-weight: bolder;
     }
@@ -291,16 +345,59 @@
 @media screen and (max-width: 450px) {
     .welcomingwrapper{
        
-       transform: scale(0.2);
+       transform: scale(0.3)!important;
         
     }
+    .welcomingnftnames{
+        bottom: 24rem;
+        transform: scale(0.2)!important;
+    }
     .menucontainer{
-        top: 2.5rem;
-        right: 2.5rem;
+
+        top: 2rem!important;
+        left: 80%!important;
+    }
+    .title{
+        top: 1.5rem;
+        transform: scale(0.8)!important;
+        left: 1rem!important;
+    }
+    .textwelcome{
+        transform: scale(0.9)!important;
+    }
+    .silvernfttext{
+        position: relative;
+        margin-left: 2.3rem!important;
+        top: 0.1rem!important;
+        transform: scale(1.1)!important;
+    }
+    .downarrow{
     }
     
 }
+.totopbutton{
+    position: absolute;
+    z-index: 1938208189023123890128309128390123012331233;
+    width: 50px;
+    height: 50px;
+    background-color: #101816;
+    border-radius: 50px;
+    bottom:2rem;
+    right: 2rem;
+    & .downarrow{
+        visibility: hidden;
+        top: 1.7rem;
+        left: 2.3rem;
+        -webkit-transform: rotate(-134deg);
 
+        &::before{
+        visibility: visible;
+
+        }
+
+    }
+}
+   
 
 .testimg{
     position: absolute;
@@ -313,4 +410,105 @@
         max-width: 100%;
         max-height: 100%;
     }
+}
+
+.welcomingnft{
+    display: flex;
+    flex-direction: column;
+    & img{
+        margin: 4rem 0 0rem 0;
+    }
+}
+
+/* Big screens */
+
+@media (min-width: 2200px) and (max-width: 2800px) {
+
+    .welcomingwrapper{
+       
+         
+     }
+     .welcomingnftnames{
+         bottom: 24rem;
+         transform: scale(0.2);
+     }
+     .menucontainer{
+         top: 5.5rem;
+         right: 5.5rem;
+     }
+     
+     .ctatext{
+        bottom: 9rem;
+     }
+}
+
+@media (min-width: 3000px) and (max-width: 4000px) {
+
+    .welcomingwrapper{
+       
+         
+     }
+     .welcomingnftnames{
+         
+     }
+     .menucontainer{
+        width: 100px!important;
+        height: 100px!important;
+        
+     }
+     
+     .ctatext{
+     }
+}
+
+
+@media (min-width: 3000px)  {
+
+    .wrapper__3card{
+    
+    }
+
+    .title{
+        transform: scale(2);
+        top: 12rem;
+    }
+   
+    .downarrow{
+        height:70px;
+        width: 70px;
+        top: 90%;
+
+        &::before{
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .menucontainer{
+        height: 100px;
+        width: 100px;
+        top: 10rem;
+        right: 10rem!important;
+    }
+
+    .wrapper__firstsection__welcoming{
+        transform: scale(1);
+        margin: 0 auto;
+
+        & .welcomingnft{
+            transform: scale(2);
+        }
+
+        .ctatext{
+            bottom: 18rem;
+            transform: scale(3);
+            font-size: 70px;
+        }
+    }
+
+    
+}
+
+.menuicon{
+    position: relative;
+    z-index: 985214;
 }

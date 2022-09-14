@@ -1,6 +1,7 @@
 import NftCard from "../component/NftCard"
 import "./home.scss"
 import MenuPack from "../component/Menu/MenuPack"
+import Tilt from "react-parallax-tilt"
 
 const Home = () => {
 
@@ -25,20 +26,41 @@ const Home = () => {
 
 
             <div className="welcomingwrapper">
+                <div className="welcomingnft">
+
             <img src={require("../assets/bronzewelcoming.png")}></img>
+            
+            <img className="bronzenfttext" src={require("../assets/bronzenft__text.png")}></img>
+
+                </div>
+                <div className="welcomingnft">
+
 
             <img src={require("../assets/silverwelcoming.png")}></img>
+                <img src={require("../assets/silver_nft_text.png")}></img>
+                </div>
+<div className="welcomingnft">
 
             <img src={require("../assets/goldwelcoming.png")}></img>
+                <img className="goldnfttext" src={require("../assets/gold_nft_text.png")}></img>
+</div>
+<div className="welcomingnft">
+
             <img src={require("../assets/blackwelcoming.png")}></img>
+                <img className="blcknfttext" src={require("../assets/black_nft_text.png")}></img>
+</div>
 
 
             </div>
-            <h1 className="ctatext">BUY NOW</h1>
+            <a className="ctatext" href="#cards3">
+            <img className="" src={require("../assets/buynow.png")}></img>
+            </a>
+
 
           
         </section>
         <section id="cards3" className="wrapper__firstsection">
+        <div className="title"><span className="monolith">MONOLITH</span><span className="nft-pass">NFT-PASS</span></div>
         <a href="#blackcard" className="downarrow"></a>
 
          <div className="menucontainer">
@@ -67,25 +89,46 @@ const Home = () => {
             </>
                 :
                 <>
-        <section className="wrapper__firstsection__welcoming">
-         <a herf="#mobilebronze" className="downarrow"></a>
-         <div className="menucontainer">
+        <section className="wrapper__firstsection__welcoming" id="welcome">
 
-        <MenuPack/>
-         </div>
+        <a href="#mobilebronze" className="downarrow"></a>
+
             <div className="welcomingwrapper">
+                <div className="welcomingnft">
+
             <img src={require("../assets/bronzewelcoming.png")}></img>
+            <img className="bronzenfttext textwelcome" src={require("../assets/bronzenft__text.png")}></img>
+
+                </div>
+                <div className="welcomingnft">
+
+
             <img src={require("../assets/silverwelcoming.png")}></img>
+                <img className="silvernfttext textwelcome" src={require("../assets/silver_nft_text.png")}></img>
+                </div>
+<div className="welcomingnft">
+
             <img src={require("../assets/goldwelcoming.png")}></img>
+                <img className="goldnfttext textwelcome" src={require("../assets/gold_nft_text.png")}></img>
+</div>
+<div className="welcomingnft">
+
             <img src={require("../assets/blackwelcoming.png")}></img>
+                <img className="blcknfttext textwelcome" src={require("../assets/black_nft_text.png")}></img>
+</div>
 
 
             </div>
-            <h1 className="ctatext">BUY NOW</h1>
+
+            <a className="ctatext" href="#mobilebronze">
+            <img className="" src={require("../assets/buynow.png")}></img>
+            </a>
 
           
         </section>
                 <section className="wrapper__firstsection" id="mobilebronze">
+        <div className="title"><span className="monolith">MONOLITH</span><span className="nft-pass">NFT-PASS</span></div>
+
                 <a href="#mobilesilver" className="downarrow"></a>
                     
                 <NftCard que="left" className="nftcard__regular bronze"/>
@@ -93,6 +136,8 @@ const Home = () => {
                 </section>
 
                 <section className="wrapper__firstsection" id="mobilesilver">
+        <div className="title"><span className="monolith">MONOLITH</span><span className="nft-pass">NFT-PASS</span></div>
+
                 <a href="#mobilegold" className="downarrow"></a>
 
                 <NftCard className="nftcard__regular silver"/>
@@ -100,14 +145,19 @@ const Home = () => {
                 </section>
 
                 <section id="mobilegold" className="wrapper__firstsection">
-                <a href="#mobileblack" className="downarrow"></a>
+        <div className="title"><span className="monolith">MONOLITH</span><span className="nft-pass">NFT-PASS</span></div>
+
+        <a href="#mobileblack" className="downarrow"></a>
 
                 <NftCard className="nftcard__regular gold"/>
                                     
                 </section>
 
                 <section id="mobileblack" className="wrapper__secondsection">
+<div className="totopbutton">
+        <a href="#welcome" className="downarrow"></a>
 
+</div>
                 <NftCard className="nftcard__black"/>
                                     
                 </section>

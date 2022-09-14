@@ -15,6 +15,8 @@ html{
     height: max-content;
     z-index: 13213;
     border-radius: 18px;
+    transform: scale(0.8);
+
     
     &__regular{
 
@@ -72,17 +74,7 @@ html{
     
 
 }
-.fligran2{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 18px;
-    z-index: 123;
-    transition: all 0s ease;
-    pointer-events: none;
-    visibility:hidden;
-    background-image: url("../assets/bgalternate__right.png");
-}
+
 
 .nftcard:hover .fligran{
     z-index: 123;
@@ -178,8 +170,8 @@ html{
     position: relative;
     z-index: 2;
     bottom: -0.2rem;
-    border-radius: 14px;
-    transform: scale(0.9);
+    border-radius: 15px;
+    z-index: 12313231231312312312312321312312321123123;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 
     &:hover{
@@ -187,29 +179,13 @@ html{
     }
     &:hover + .rgb2::after{
 
-        background:linear-gradient(45deg,
-        #624c63 0%,
-        #c18d91 10%,
-        #fad5ba 20%,
-        #e6d1a2 30%,
-        #71aaa1 40%,
-        #09585f 50%
-        )
-        repeat 0% 0% / 300% 100%;
+       
         }
 
 
 }
 
 
-// Shadow Activate
-
-
-// .monolith__img__wrapper:hover + .silvershadow {
-
-//     box-shadow: 0px 0px 20px 20px rgba(204,250,242,1);
-
-// }
 
 .monolith__img__wrapper:hover + .goldshadow{
 
@@ -223,17 +199,18 @@ html{
 
 .bgcardblack{
 
-    box-shadow: 3px 1px 40px 5px #02d8cd;
     border-radius: 18px;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.9);
 
 }
 
 .rgb2:hover{
-
-    box-shadow:3px 1px 80px 15px #02d8cd;
-    border-radius: 20px;
+    box-shadow:0px 0px 50px 1px #ffff;
 }
+.rgb2{
+    border-radius: 18px;
 
+}
 
 //BUTTONS
 .buttonwrapper{
@@ -298,7 +275,6 @@ h1{
     align-items: center;
     color: white;
 
-    cursor: default;
     animation: rgb 1s linear infinite;
 
    
@@ -327,6 +303,7 @@ h1{
     border-radius: 50px;
     background-size: 600%;
     animation: rgb 6s linear infinite;
+    z-index: 1239087312331233211313;
     visibility: hidden;
     
 }
@@ -353,6 +330,17 @@ h1{
     }
 
 }
+.blackbutton:hover{
+  
+    .buttonbronze-gradient{
+        visibility: visible;
+    }
+    
+
+
+}
+
+
 
 
 .buttonwrapper__bronze, .buttonwrapper__silver, .buttonwrapper__gold{
@@ -372,7 +360,6 @@ h1{
     justify-content: center;
     align-items: center;
     color: white;
-    cursor: default;
     text-decoration: none;
 
     &:hover {
@@ -396,7 +383,6 @@ h1{
     justify-content: center;
     align-items: center;
     color: white;
-    cursor: default;
     z-index: 11244121424124;
   & h1 {
     bottom: 0;
@@ -429,7 +415,6 @@ h1{
     justify-content: center;
     align-items: center;
     color: white;
-    cursor: default;
 
     &:hover{
 
@@ -453,18 +438,21 @@ h1{
     bottom: 2.5rem; 
     z-index: 1231;
     background: linear-gradient(90deg, rgba(32,30,48,1) 0%, rgba(30,47,48,1) 89%);
-    box-shadow: 0px 12px 15px -5px #07c5c7;
+    box-shadow: 0px 12px 15px -5px #fff;
     border-radius: 50px;
     transition: all 0.3s ease-in;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    cursor: default;
+    text-decoration: none;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,29,29,1) 64%);
     &:hover{
         bottom: 2rem;
         box-shadow: none!important;
+        
+           
+        
     }
 
 }
@@ -508,16 +496,38 @@ h1{
     animation: rgb 8s linear infinite;
     z-index: -1;
 }
-
+.blackrgb{
+    content: "";
+    background:linear-gradient(-45deg,
+    #ef00fa 0%,
+    #fc2c71 10%,
+    #fdd0af 20%,
+    #ffc000 30%,
+    #ffe400 40%,
+    #c7ff00 50%,
+    #00ecff 60%,
+    #00ffd7 70%,
+    #f000ff 80%,
+    #e604ee 90%
+    )
+    repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -1px;
+    filter: blur(8px);
+    border-radius: 16px;
+    animation: rgb 8s linear infinite;
+    z-index: -1;
+}
 
 .rgb2::after{
     content: "";
-    background: "";
+    box-shadow: 0 0 40px 4px#ffff;
     position: absolute;
-    inset: -5px;
+    inset: -3px;
     filter: blur(3px);
-    border-radius: 16px;
+    border-radius: 20px;
     animation: rgb 6s linear infinite;
+    
     z-index: -1;
 }
 
@@ -581,8 +591,8 @@ h1{
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    top: 3rem;
-    z-index: 2;
+    top: 4rem;
+    z-index: 21312123121329321;
     pointer-events: inherit;
     padding: 0!important;
    
@@ -610,7 +620,9 @@ h1{
 
         transform: scale(0.5);
     }
-    
+    // .fligran{
+    //     transform: scale(0.5);
+    // }
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
@@ -619,6 +631,9 @@ h1{
 
         transform: scale(0.8);
     }
+    // .fligran{
+    //     transform: scale(0.8);
+    // }
     
 }
 
@@ -626,13 +641,16 @@ h1{
 @media (min-width: 501px) and (max-width: 1000px) {
 
     .nftcard{
+        transform: scale(0.7);
 
         &__regular{
             
-          transform: scale(0.7);
 
         }
     }
+    // .fligran{
+    // transform: scale(0.7);
+    // }
     
 }
 
@@ -667,3 +685,13 @@ h1{
 }
 
 
+//Big  Screen 
+
+
+@media (min-width: 3000px)  {
+
+    .nftcard{
+        transform: scale(1.8)!important;
+        margin: 0 400px 0 400px;
+    }
+}
