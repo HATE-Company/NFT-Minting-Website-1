@@ -1,33 +1,33 @@
-
-.wrapper{
+.wrapper {
     height: 100vh;
     overflow: x hidden;
-    overflow:auto;
+    overflow: auto;
     position: relative;
-    
+
     scroll-snap-type: y mandatory;
 
-    & section{
+    & section {
         scroll-snap-align: start;
 
     }
-    &__firstsection{
-        
+
+    &__firstsection {
+
         position: relative;
         height: 100vh;
         background-image: url("../assets/normalbg.png");
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
         scroll-snap-align: start;
 
-     
+
     }
 
-    &__secondsection{
+    &__secondsection {
         position: relative;
         display: flex;
         height: 100vh;
@@ -35,20 +35,20 @@
         align-items: center;
         justify-content: center;
         background-image: url("../assets/welcoming.png");
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
     }
 
-    &__3card{
+    &__3card {
         display: flex;
         justify-content: space-evenly;
         width: 98.5%;
     }
 }
 
-.title{
+.title {
     position: absolute;
     color: white;
     width: fit-content;
@@ -66,73 +66,77 @@
     transform: scale(0.8)
 }
 
-.nft-pass{
+.nft-pass {
     font-size: 34px;
 }
 
 
-.menucontainer{
+.menucontainer {
     display: flex;
     position: fixed;
     width: 40px;
     height: 40px;
     top: 4.5rem;
     z-index: 1290847204891273312;
-    right: 6.5rem!important;
+    right: 6.5rem !important;
 }
 
 
-.downarrow, .downarrow:before{
+.downarrow,
+.downarrow:before {
 
-  position: absolute;
-  left: 50%;
-  z-index: 1;
-
-}
-
-.downarrow{
-
-  width: 40px;
-  height: 40px;
-  top: 92%;
-  margin: -20px 0 0 -20px;
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-  -webkit-transform: rotate(45deg);
+    position: absolute;
+    left: 50%;
+    z-index: 1;
 
 }
 
-  
-.downarrow:before{
+.downarrow {
 
-  content: '';
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
+    width: 40px;
+    height: 40px;
+    top: 92%;
+    margin: -20px 0 0 -20px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    -webkit-transform: rotate(45deg);
 
-  }
-
-@keyframes arrow{
-  0%{
-    opacity: 1}
- 100% {
-    opacity: 0;
-    transform: translate(-10px, -10px)}
 }
 
-@media screen and (max-width: 800px){
-    
-    .title{
+
+.downarrow:before {
+
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px)
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .title {
 
         position: absolute;
         color: white;
@@ -144,28 +148,29 @@
         margin-left: none;
         margin-right: none;
         font-size: 34px;
-        
+
 
     }
 
-    .nft-pass{
+    .nft-pass {
 
         font-size: 18px;
 
     }
 
-    .downarrow{
+    .downarrow {
         width: 20px;
         height: 20px;
         left: 52.5%;
-        
 
-        &::before{
+
+        &::before {
             width: 10px;
             height: 10px;
         }
     }
-    .menucontainer{
+
+    .menucontainer {
         width: 25px;
         height: 25px;
     }
@@ -173,15 +178,15 @@
 }
 
 
-.wrapper__firstsection__welcoming{
+.wrapper__firstsection__welcoming {
 
     position: relative;
     height: 100%;
     width: 100%;
     background-image: url("../assets/welcoming.png");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,8 +195,8 @@
 }
 
 
-.header{
-    
+.header {
+
     position: fixed;
     z-index: 1414209831;
     width: 100%;
@@ -199,16 +204,17 @@
     background-color: red;
 }
 
-.welcomingwrapper{
+.welcomingwrapper {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     padding: 0 22rem;
     margin: 0 auto;
     transform: scale(0.8);
-   
+
 }
-.welcomingnftnames{
+
+.welcomingnftnames {
     display: flex;
     position: absolute;
     justify-content: space-evenly;
@@ -217,7 +223,8 @@
     margin: 0 auto;
     transform: scale(0.95);
     bottom: 13.5rem;
-    & img{
+
+    & img {
         margin: 0 1.5rem;
     }
 
@@ -226,7 +233,7 @@
 
 
 
-.ctatext{
+.ctatext {
     position: absolute;
     bottom: 7.5rem;
     font-size: 30px;
@@ -237,185 +244,207 @@
 
 @media screen and (max-width: 1000px) {
 
-    .welcomingwrapper{
-        transform: scale(0.5)!important;
+    .welcomingwrapper {
+        transform: scale(0.5) !important;
         justify-content: space-evenly;
-        
-    }
-    .welcomingnftnames{
 
     }
-    .title{
+
+    .welcomingnftnames {}
+
+    .title {
         top: 2rem;
-        left:-23rem!important;
+        left: -23rem !important;
     }
 
-    .welcomingnft{
+    .welcomingnft {
         transform: scale(0.8);
 
     }
-    .menucontainer{
-        top: 5%!important;
-        right: 2.5rem!important;
+
+    .menucontainer {
+        top: 5% !important;
+        right: 2.5rem !important;
         left: 85%;
     }
-    
+
 }
 
 
 @media screen and (max-width: 1380px) {
-    .welcomingwrapper{
-       
-       transform: scale(0.7);
-        
+    .welcomingwrapper {
+
+        transform: scale(0.7);
+
     }
-    .welcomingnftnames{
-        bottom:15.5rem ;
+
+    .welcomingnftnames {
+        bottom: 15.5rem;
         transform: scale(0.7);
     }
-    .menucontainer{
+
+    .menucontainer {
         top: 2.5rem;
-        right: 2.5rem!important;
+        right: 2.5rem !important;
     }
-    
+
 }
-@media screen and (max-height: 723px){
-    .welcomingwrapper{
-       
+
+@media screen and (max-height: 723px) {
+    .welcomingwrapper {
+
         transform: scale(0.5);
-         
-     }
+
+    }
 }
 
 
 @media screen and (max-width: 803px) {
-    .welcomingwrapper{
-       position: absolute;
-       transform: scale(1);
-       width: 100%;
-        
+    .welcomingwrapper {
+        position: absolute;
+        transform: scale(1);
+        width: 100%;
+
     }
-    .welcomingwrapper{
+
+    .welcomingwrapper {
         transform: scale(0.4);
     }
-    .welcomingnftnames{
-        bottom: 15rem!important;
+
+    .welcomingnftnames {
+        bottom: 15rem !important;
         transform: scale(0.4);
 
 
     }
-    .title{
-        left: 5%!important;
+
+    .title {
+        left: 5% !important;
     }
-    .menucontainer{
-        top: 3%!important;
+
+    .menucontainer {
+        top: 3% !important;
         left: 90%;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width: 550px) {
-    .welcomingwrapper{
-       
-       transform: scale(0.3);
-        
+    .welcomingwrapper {
+
+        transform: scale(0.3);
+
     }
-    .welcomingnftnames{
-        bottom: 16rem!important;
+
+    .welcomingnftnames {
+        bottom: 16rem !important;
         transform: scale(0.3);
     }
-    .title{
+
+    .title {
         top: 2.5%;
-        left: 2%!important;
+        left: 2% !important;
     }
-    .menucontainer{
-        top: 3%!important;
-        left: 86%!important;
+
+    .menucontainer {
+        top: 3% !important;
+        left: 86% !important;
     }
-    .ctatext{
-        bottom: 15%!important;
+
+    .ctatext {
+        bottom: 15% !important;
         transform: scale(0.8);
         font-weight: bolder;
     }
-    
+
 }
 
 
 @media screen and (max-width: 450px) {
-    .welcomingwrapper{
-       
-       transform: scale(0.3)!important;
-        
-    }
-    .welcomingnftnames{
-        bottom: 24rem;
-        transform: scale(0.2)!important;
-    }
-    .menucontainer{
+    .welcomingwrapper {
 
-        top: 2rem!important;
-        left: 80%!important;
+        transform: scale(0.3) !important;
+
     }
-    .title{
+
+    .welcomingnftnames {
+        bottom: 24rem;
+        transform: scale(0.2) !important;
+    }
+
+    .menucontainer {
+
+        top: 2rem !important;
+        left: 80% !important;
+    }
+
+    .title {
         top: 1.5rem;
-        transform: scale(0.8)!important;
-        left: 1rem!important;
+        transform: scale(0.8) !important;
+        left: 1rem !important;
     }
-    .textwelcome{
-        transform: scale(0.9)!important;
+
+    .textwelcome {
+        transform: scale(0.9) !important;
     }
-    .silvernfttext{
+
+    .silvernfttext {
         position: relative;
-        margin-left: 2.3rem!important;
-        top: 0.1rem!important;
-        transform: scale(1.1)!important;
+        margin-left: 2.3rem !important;
+        top: 0.1rem !important;
+        transform: scale(1.1) !important;
     }
-    .downarrow{
-    }
-    
+
+    .downarrow {}
+
 }
-.totopbutton{
+
+.totopbutton {
     position: absolute;
     z-index: 1938208189023123890128309128390123012331233;
     width: 50px;
     height: 50px;
     background-color: #101816;
     border-radius: 50px;
-    bottom:2rem;
+    bottom: 2rem;
     right: 2rem;
-    & .downarrow{
+
+    & .downarrow {
         visibility: hidden;
         top: 1.7rem;
         left: 2.3rem;
         -webkit-transform: rotate(-134deg);
 
-        &::before{
-        visibility: visible;
+        &::before {
+            visibility: visible;
 
         }
 
     }
 }
-   
 
-.testimg{
+
+.testimg {
     position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    max-width: 100%; /* Need a specific value to work*/
-    & img{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+    /* Need a specific value to work*/
+    & img {
         max-width: 100%;
         max-height: 100%;
     }
 }
 
-.welcomingnft{
+.welcomingnft {
     display: flex;
     flex-direction: column;
-    & img{
+
+    & img {
         margin: 4rem 0 0rem 0;
     }
 }
@@ -424,91 +453,85 @@
 
 @media (min-width: 2200px) and (max-width: 2800px) {
 
-    .welcomingwrapper{
-       
-         
-     }
-     .welcomingnftnames{
-         bottom: 24rem;
-         transform: scale(0.2);
-     }
-     .menucontainer{
-         top: 5.5rem;
-         right: 5.5rem;
-     }
-     
-     .ctatext{
+    .welcomingwrapper {}
+
+    .welcomingnftnames {
+        bottom: 24rem;
+        transform: scale(0.2);
+    }
+
+    .menucontainer {
+        top: 5.5rem;
+        right: 5.5rem;
+    }
+
+    .ctatext {
         bottom: 9rem;
-     }
+    }
 }
 
 @media (min-width: 3000px) and (max-width: 4000px) {
 
-    .welcomingwrapper{
-       
-         
-     }
-     .welcomingnftnames{
-         
-     }
-     .menucontainer{
-        width: 100px!important;
-        height: 100px!important;
-        
-     }
-     
-     .ctatext{
-     }
+    .welcomingwrapper {}
+
+    .welcomingnftnames {}
+
+    .menucontainer {
+        width: 100px !important;
+        height: 100px !important;
+
+    }
+
+    .ctatext {}
 }
 
 
-@media (min-width: 3000px)  {
+@media (min-width: 3000px) {
 
-    .wrapper__3card{
-    
-    }
+    .wrapper__3card {}
 
-    .title{
+    .title {
         transform: scale(2);
         top: 12rem;
     }
-   
-    .downarrow{
-        height:70px;
+
+    .downarrow {
+        height: 70px;
         width: 70px;
         top: 90%;
 
-        &::before{
+        &::before {
             height: 70px;
             width: 70px;
         }
     }
-    .menucontainer{
+
+    .menucontainer {
         height: 100px;
         width: 100px;
         top: 10rem;
-        right: 10rem!important;
+        right: 10rem !important;
     }
 
-    .wrapper__firstsection__welcoming{
+    .wrapper__firstsection__welcoming {
         transform: scale(1);
         margin: 0 auto;
 
-        & .welcomingnft{
+        & .welcomingnft {
             transform: scale(2);
         }
 
-        .ctatext{
+        .ctatext {
             bottom: 18rem;
             transform: scale(3);
             font-size: 70px;
         }
     }
 
-    
+
 }
 
-.menuicon{
+.menuicon {
     position: relative;
     z-index: 985214;
 }

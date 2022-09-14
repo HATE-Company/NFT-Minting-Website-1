@@ -5,7 +5,7 @@ import Hamburger from 'hamburger-react'
 const MenuPack = (props) => {
 
 
-    const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleIsOpen = () => {
     setIsOpen(!isOpen)
@@ -17,19 +17,24 @@ const MenuPack = (props) => {
  
 
     return(
-      <div className="outercontainer">
-        <div className="menuicon">
 
-        <Hamburger toggled={isOpen} toggle={setIsOpen}>
-        </Hamburger>
-        </div>
-        <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
-<h1>MENU</h1>
-<a href="https://www.linktr.ee/hateverse" target={"_blank"}>WHITE PAPER</a>
+        <div className="outercontainer">
+
+          <div className="menuicon">
+
+            <Hamburger toggled={isOpen} toggle={setIsOpen} />
+
+          </div>
+
+          <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
+
+            <h1>MENU</h1>
+
+            <a href="https://www.linktr.ee/hateverse" target={"_blank"}>WHITE PAPER</a>
                    
-
             </Menu>
-      </div>
+
+        </div>
     )
 
 }
