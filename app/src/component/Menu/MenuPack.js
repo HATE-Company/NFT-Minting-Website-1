@@ -20,11 +20,7 @@ const MenuPack = (props) => {
 
         <div className="outercontainer">
 
-          <div className="menuicon">
-
-            <Hamburger toggled={isOpen} toggle={setIsOpen} />
-
-          </div>
+        
 
           <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
 
