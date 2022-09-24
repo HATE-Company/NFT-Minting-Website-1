@@ -80,6 +80,7 @@
         height: 5px!important;
         right: -15px !important;
         top: 0.9rem;
+        display: none;
 
         &-button {
 
@@ -106,9 +107,10 @@
         }
 
         &-bars {
+            display: none;
             background-color: #EEE9FF;
             border-radius: 15px;
-            width: 10%;
+            width: 100%;
             height: 5% !important;
 
         }
@@ -118,7 +120,8 @@
 }
 .outercontainer{
     color: white!important;
- 
+    position: relative;
+
     & h1 {
         font-size: 38px;
     }
@@ -136,4 +139,3 @@
         }
     }
 }
-

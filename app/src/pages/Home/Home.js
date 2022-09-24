@@ -1,4 +1,6 @@
 import Header from "../../component/Header/Header";
+import RotatingWords from "../../component/RotatingWords/RotatingWords";
+import RotatingWordsAlternate from "../../component/RotatingWordsAlternate/RotatingWordsAlternate";
 import "./home.scss"
 
 
@@ -8,13 +10,15 @@ const Home = () => {
         <>
         <Header></Header>
         <section className='welcoming__section'>
-            <h1>Test</h1>
+            
+            <RotatingWords />
+     
+      
+
         </section>
         <section className='first__section'>
-        <h1>Test</h1>
         </section>
         <section className='second__section'>
-        <h1>Test</h1>
         </section>
         </>
     )
