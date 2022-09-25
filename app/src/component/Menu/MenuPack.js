@@ -26,7 +26,7 @@ const MenuPack = (props) => {
 
           </div>
 
-          <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
+          <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={closeSideBar}>
             <div className="menuheader">
 
 
@@ -38,9 +38,9 @@ const MenuPack = (props) => {
             </div>
 
 
-            <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Home<div className="menuitem__border"></div></a>
+            <a className="menuitem" href="#main" onClick={closeSideBar} >Home<div className="menuitem__border"></div></a>
             
-            <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Monolith NFT Pass<div className="menuitem__border"></div></a>
+            <a className="menuitem" href="#monolithnft" onClick={closeSideBar}>Monolith NFT Pass<div className="menuitem__border"></div></a>
             <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Whitepaper<div className="menuitem__border"></div></a>
             <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Community<div className="menuitem__border"></div></a>
                    

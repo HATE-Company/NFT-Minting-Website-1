@@ -105,3 +105,10 @@
     }
 
 }
+
+@media (min-width: 2500px) and (max-width: 3900px){
+    .rotating-text{
+        transform: scale(2.5)!important;
+        transform-origin: center;
+    }
+}

@@ -205,6 +205,10 @@ transition: all 1s ease-in-out;
         }
     }
 }
+.menuicon{
+    position: relative;
+    z-index: 9999999;
+}
 @media (min-width: 499px) and (max-width: 1024px) {
 
     .brandname{
@@ -235,7 +239,105 @@ transition: all 1s ease-in-out;
         font-size: 8px!important;
     }
     .menuheader{
-        top: -1.5%;
+        top: -2%;
+        & img{
+            height: 25px;
+        }
+    }
+    .bm-menu{
+        padding-top: 1.5rem!important;
+    }
+    .bm-item-list{
+        padding-left:  2rem!important;
+        padding-right:  2rem!important;
+    }
+    .menuicon{
+        transform: scale(0.7);
+        transform-origin: right;
+        
+    }
+
+    .outercontainer{
+        color: white!important;
+        position: relative;
+    
+        & h1 {
+            font-size: 24px;
+        }
+        & h3{
+            font-size: 12px;
+        }
+        & a {
+            margin-top: 0rem;
+            font-size: 30px;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            letter-spacing: 0px!important;
+            color: white!important;
+    
+            &:hover{
+                       
+                color: #e604ee!important;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    .brandname{
+        font-size: 12px!important;
+    }
+    .menuheader{
+        top: 2.5%;
+        & img{
+            height: 25px;
+        }
+    }
+    .bm-menu{
+        padding-top: 1.5rem!important;
+    }
+    .bm-item-list{
+        padding-left:  2rem!important;
+        padding-right:  2rem!important;
+    }
+    .menuicon{
+        transform: scale(0.7);
+        transform-origin: right;
+        
+    }
+
+    .outercontainer{
+        color: white!important;
+        position: relative;
+    
+        & h1 {
+            font-size: 24px;
+        }
+        & h3{
+            font-size: 12px;
+        }
+        & a {
+            margin-top: 0rem;
+            font-size: 30px;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            letter-spacing: 0px!important;
+            color: white!important;
+    
+            &:hover{
+                       
+                color: #e604ee!important;
+            }
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 300px) {
+    .brandname{
+        font-size: 8px!important;
+    }
+    .menuheader{
+        top: 2.5%;
         & img{
             height: 25px;
         }
@@ -280,10 +382,13 @@ transition: all 1s ease-in-out;
 }
 
 
-
-
-
-.menuicon{
-    position: relative;
-    z-index: 9999999;
+@media (min-width: 2500px) and (max-width: 3900px){
+    .menuicon{
+        transform: scale(2);
+        transform-origin: right;
+        
+    }
 }
+
+
+

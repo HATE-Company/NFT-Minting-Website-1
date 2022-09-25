@@ -19,7 +19,7 @@ const Home = () => {
 
         </section>
 
-        <section className='second__section'>
+        <section id='monolithnft' className='second__section'>
 
         </section>
 

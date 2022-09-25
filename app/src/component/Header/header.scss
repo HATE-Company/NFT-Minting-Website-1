@@ -114,3 +114,29 @@
         }
     
 }
+
+@media (min-width: 2500px) and (max-width: 3900px){
+    .header{
+      background-color: black;
+      padding: 3rem 10rem;
+
+      &__left{
+          
+          & img{
+              height: 
+              80px;
+          }
+      }
+
+      &__middle{
+
+     
+        & img{
+          height:50px;
+        }
+      }
+
+      &__right{
+      }
+    }
+}
