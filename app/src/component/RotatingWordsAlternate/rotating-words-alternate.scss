@@ -1,29 +1,33 @@
 .wrapper{
-    display: inline-flex;
-}
+    display:flex;
+}   
 
 .wrapper .static-txt{
-    font-size: 60px;
-    color: #ffff;
+    color: white;
+
+    font-size: 60px!important;
     font-weight: 400;
 }
 
 .wrapper .dynamic-txts{
-    margin-left: 15px;
-    line-height: 75px;
-    height: 90px;
+    font-family: "Calibri"!important;
+    margin-left: -10px;
+    line-height:90px;
+    height: 88px;
     overflow: hidden;
+
 }
 
 .dynamic-txts li{
+    color: #e604ee;
     list-style: none;
     font-size: 60px;
     font-weight: 500;
-    color: #fc6d6d;
     position: relative;
     top: 0;
-    animation: slide 6s steps(5) infinite;
+    animation: slide 6s steps(4) infinite;
 }
+
 @keyframes slide {
     100%{
         top: -360px;
@@ -31,21 +35,24 @@
 }
 .dynamic-txts li span{
     position: relative;
+    top: -0.5rem;
 }
 .dynamic-txts li span::after{
     content: "";
-   position: absolute;
-   left: 0;
-   height: 100%;
-   background: inherit;
-   width: 100%;
-   border-left: 2px solid #fc6d6d;
-   animation: typing 1.5s steps(10) infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(9, 14, 14);
+    border-left: 2px solid #e604ee;
+    animation: typing 1.5s steps(16) infinite;
+
 }
 
-@keyframes typing{
+@keyframes typing {
     100%{
         left: 100%;
-        margin: 0 -35px 0 35px;
+        margin: 0 30px 0 30px;
     }
 }

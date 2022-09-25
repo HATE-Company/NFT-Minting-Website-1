@@ -240,12 +240,19 @@ transition: all 1s ease-in-out;
     }
     .menuheader{
         top: -2%;
+        margin-bottom: 5rem;
         & img{
             height: 25px;
+            margin-left: -1rem;
         }
+    }
+    .menuitem{
+        margin-left: -1rem;
+
     }
     .bm-menu{
         padding-top: 1.5rem!important;
+
     }
     .bm-item-list{
         padding-left:  2rem!important;
@@ -289,6 +296,7 @@ transition: all 1s ease-in-out;
     }
     .menuheader{
         top: 2.5%;
+        
         & img{
             height: 25px;
         }
@@ -301,7 +309,6 @@ transition: all 1s ease-in-out;
         padding-right:  2rem!important;
     }
     .menuicon{
-        transform: scale(0.7);
         transform-origin: right;
         
     }
@@ -337,7 +344,7 @@ transition: all 1s ease-in-out;
         font-size: 8px!important;
     }
     .menuheader{
-        top: 2.5%;
+        top: -2.5%;
         & img{
             height: 25px;
         }
@@ -353,6 +360,10 @@ transition: all 1s ease-in-out;
         transform: scale(0.7);
         transform-origin: right;
         
+    }
+
+    .menuitem{
+        font-size: 20px!important;
     }
 
     .outercontainer{

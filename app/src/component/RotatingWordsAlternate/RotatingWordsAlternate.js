@@ -6,15 +6,17 @@ const RotatingWordsAlternate = () => {
 
     return(
         <div className="wrapper">
-            <div className="static-txt">I'm a</div>
+            <div className="static-txt">BE</div>
             <ul className="dynamic-txts">
-                <li><span>Youtuber</span></li>
-                <li><span>Youtuber</span></li>
-                <li><span>Youtuber</span></li>
-                <li><span>Developer</span></li>
-                <li><span>Freelancer</span></li>
+   
+                <li><span>a reporter</span></li>
+                <li><span>a teacher</span></li>
+                <li><span>a content creator</span></li>
+                <li><span>a influencer</span></li>
 
             </ul>
+            <div className="static-txt">&nbsp;&nbsp;YOUR OWN MEDIA</div>
+
 
         </div>
     )
