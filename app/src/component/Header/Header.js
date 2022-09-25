@@ -1,5 +1,4 @@
-import Hamburger from "hamburger-react";
-import { useState } from "react";
+
 import MenuPack from "../Menu/MenuPack";
 import "./header.scss"
 
@@ -13,7 +12,10 @@ const Header = () => {
 
             <div className='header__left'>
 
+                <a href="#main">
                 <img src={require("../../assets/hate.png")} />
+                </a>
+                
                 {/* <h1>Hate Club</h1> */}
 
             </div>

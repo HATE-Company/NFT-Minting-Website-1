@@ -3,16 +3,16 @@
     font-weight: bold;
     font-size: 36px;
     color: #fff;
-    position: absolute;
-    transform: translateX(-80px);
-    right:24%;
     display: flex;
-
     justify-content: center;
-
+    position: relative;
+    z-index: -2;
     & h1 {
         font-size: 36px;
-        margin-left: 23.2rem;
+    font-family: "Calibri"!important;
+    width: max-content;
+    height: max-content;
+
     }
 
 }
@@ -20,6 +20,8 @@
 
 .rotating-text p{
     display: inline-flex;
+    font-family: "Calibri"!important;
+
     margin: 0;
     vertical-align: top;
 }
@@ -29,15 +31,19 @@
     position: absolute;
     display: flex;
     opacity: 0;
+
 }
 
 .rotating-text p .word .letter{
     transform-origin: center center 25px;
+    font-family: "Calibri"!important;
+
 }
 
 .rotating-text p .word .letter.out{
     transform: rotateX(90deg);
     transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
+    transform-origin: center;
 }
 
 .rotating-text p .word .letter.in{
@@ -70,4 +76,32 @@
 
 .w-5{
     color: #f1c40f;
+}
+
+
+
+@media (min-width: 499px) and (max-width: 1024px) {
+
+    .rotating-text{
+        display: block;
+       
+    }
+
+    .filler{
+        display: none!important;
+    }
+}
+
+
+@media (min-width: 200px) and (max-width: 500px) {
+
+    .filler{
+        display: none!important;
+    }
+    .rotating-text{
+        display: block;
+        transform: scale(0.7)!important;
+        transform-origin: center;
+    }
+
 }

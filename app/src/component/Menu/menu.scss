@@ -37,6 +37,7 @@
     &-overlay {
         position: relative !important;
         background: transparent !important;
+        height: 100%;
     }
 
     &-item-list {
@@ -45,29 +46,31 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-left: 2.5rem;
+        padding: 0 8rem;
         height: 80%!important;
-        top: 8rem!important;
+        top: 0rem!important;
 
     }
 
 
     &-menu {
-        background: #131a1b;
+        background: black;
         align-items: flex-start;
         text-align: center;
-        padding: 2.5em 1.5em 0;
         font-size: 1.15em;
+        padding-top: 2rem;
         position: relative !important;
         width: 100%;
         color: #ffffff !important;
         box-shadow: 0 -20px 20px 5px black;
+        overflow: hidden!important;
 
         &-wrap {
+
         position: fixed !important;
         top: 0rem;
         right: 0px !important;
-        width: 22% !important;
+        width: 100% !important;
         height: 100% !important;
         }
 
@@ -118,6 +121,10 @@
     }
 
 }
+.brandname{
+    position:absolute;
+    font-family:'Dublin'
+}
 .outercontainer{
     color: white!important;
     position: relative;
@@ -127,8 +134,9 @@
     }
 
     & a {
-        margin-top: 5rem;
-        font-size: 26px;
+        margin-top: 2rem;
+        font-size: 65px;
+        margin-bottom: 2rem;
         text-decoration: none;
         letter-spacing: 0px!important;
         color: white!important;
@@ -136,6 +144,146 @@
         &:hover{
                    
             color: #e604ee!important;
+
+        }
+
+    }
+
+}
+
+.menuheader{
+    width: 100%;
+    height: 3rem;
+    top: 2%;
+    left: 0;
+    display: flex!important;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom:8rem ;
+
+
+    & img{
+        height: 30px;
+        position: absolute;
+        left: 0;
+        
+
+    }
+
+   & h3{
+    width: max-content;
+    height: max-content;
+   }
+}
+
+.menuitem{
+transition: all 0.5s ease-in-out;
+width: 90%;
+font-family: 'Gidole';
+display: flex;
+text-align: left;
+padding-bottom: 1.2rem;
+border-bottom: 1px solid grey;
+transition: all 1s ease-in-out;
+
+
+
+    &__border{
+
+        transition: all 0.5s ease-in-out;
+        width: 0;
+        height: 30%;
+        border-bottom: 1px solid white;
+    }
+
+    &:hover{
+        border-bottom: 1px solid black;
+        .menuitem__border{
+            width: 100%;
         }
     }
+}
+@media (min-width: 499px) and (max-width: 1024px) {
+
+    .brandname{
+        font-size: 15px;
+    }
+    .outercontainer{
+
+        & a{
+            font-size: 35px;
+            margin-bottom: 3rem;
+        }
+    }
+    .menuheader{
+        & img{
+            height: 25px;
+        }
+    }
+    .bm-menu{
+        padding: 1.6rem!important;;
+    }
+    .bm-item-list{
+        padding: 0rem 2rem!important;
+    }
+
+}
+@media (min-width: 200px) and (max-width: 500px) {
+    .brandname{
+        font-size: 8px!important;
+    }
+    .menuheader{
+        top: -1.5%;
+        & img{
+            height: 25px;
+        }
+    }
+    .bm-menu{
+        padding-top: 1.5rem!important;
+    }
+    .bm-item-list{
+        padding-left:  2rem!important;
+        padding-right:  2rem!important;
+    }
+    .menuicon{
+        transform: scale(0.7);
+        transform-origin: right;
+        
+    }
+
+    .outercontainer{
+        color: white!important;
+        position: relative;
+    
+        & h1 {
+            font-size: 24px;
+        }
+        & h3{
+            font-size: 12px;
+        }
+        & a {
+            margin-top: 0rem;
+            font-size: 30px;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            letter-spacing: 0px!important;
+            color: white!important;
+    
+            &:hover{
+                       
+                color: #e604ee!important;
+            }
+        }
+    }
+}
+
+
+
+
+
+.menuicon{
+    position: relative;
+    z-index: 9999999;
 }

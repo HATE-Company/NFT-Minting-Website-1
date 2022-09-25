@@ -4,6 +4,7 @@
    width: 100%;
    padding: 1rem 10rem;
    height:max-content;
+   z-index: 1231313213123123131313123123131!important;
    background-color: black; 
    
     &__left{
@@ -108,8 +109,6 @@
             }
 
             &__right{
-              transform: scale(0.7);
-              transform-origin: right;
             }
             
         }

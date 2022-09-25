@@ -60,12 +60,12 @@ useEffect(()=> {
 
                 <span className="word w-1"> a&nbsp;reporter</span>
                 <span className="word w-2"> a&nbsp;teacher</span>
-                <span className="word w-3"> a&nbsp;content creator</span>
+                <span className="word w-3"> a&nbsp;content&nbsp;creator</span>
                 <span className="word w-4"> an&nbsp;influencer</span>
 
             </div>
             </p>
-
+            <p className="filler" style={{visibility:'hidden'}}>a content creator&nbsp;&nbsp;</p>
             <h1>YOUR OWN MEDIA</h1>
            
             

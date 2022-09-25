@@ -9,16 +9,22 @@ const Home = () => {
     return(
         <>
         <Header></Header>
-        <section className='welcoming__section'>
+        <section id='main' className='welcoming__section'>
             
             <RotatingWords />
      
-      
+        </section>
+
+        <section className='first__section'>
 
         </section>
-        <section className='first__section'>
-        </section>
+
         <section className='second__section'>
+
+        </section>
+
+        <section className='third__section'>
+
         </section>
         </>
     )

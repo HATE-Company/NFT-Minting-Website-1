@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-Light.eot');
+    src: url('Dublin-Light.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-Light.woff2') format('woff2'),
+        url('Dublin-Light.woff') format('woff'),
+        url('Dublin-Light.ttf') format('truetype'),
+        url('Dublin-Light.svg#Dublin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-HeavyItalic.eot');
+    src: url('Dublin-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-HeavyItalic.woff2') format('woff2'),
+        url('Dublin-HeavyItalic.woff') format('woff'),
+        url('Dublin-HeavyItalic.ttf') format('truetype'),
+        url('Dublin-HeavyItalic.svg#Dublin-HeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-Regular.eot');
+    src: url('Dublin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-Regular.woff2') format('woff2'),
+        url('Dublin-Regular.woff') format('woff'),
+        url('Dublin-Regular.ttf') format('truetype'),
+        url('Dublin-Regular.svg#Dublin-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-Heavy.eot');
+    src: url('Dublin-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-Heavy.woff2') format('woff2'),
+        url('Dublin-Heavy.woff') format('woff'),
+        url('Dublin-Heavy.ttf') format('truetype'),
+        url('Dublin-Heavy.svg#Dublin-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-Thin.eot');
+    src: url('Dublin-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-Thin.woff2') format('woff2'),
+        url('Dublin-Thin.woff') format('woff'),
+        url('Dublin-Thin.ttf') format('truetype'),
+        url('Dublin-Thin.svg#Dublin-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-ThinItalic.eot');
+    src: url('Dublin-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-ThinItalic.woff2') format('woff2'),
+        url('Dublin-ThinItalic.woff') format('woff'),
+        url('Dublin-ThinItalic.ttf') format('truetype'),
+        url('Dublin-ThinItalic.svg#Dublin-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-BoldItalic.eot');
+    src: url('Dublin-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-BoldItalic.woff2') format('woff2'),
+        url('Dublin-BoldItalic.woff') format('woff'),
+        url('Dublin-BoldItalic.ttf') format('truetype'),
+        url('Dublin-BoldItalic.svg#Dublin-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-Bold.eot');
+    src: url('Dublin-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-Bold.woff2') format('woff2'),
+        url('Dublin-Bold.woff') format('woff'),
+        url('Dublin-Bold.ttf') format('truetype'),
+        url('Dublin-Bold.svg#Dublin-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-Italic.eot');
+    src: url('Dublin-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-Italic.woff2') format('woff2'),
+        url('Dublin-Italic.woff') format('woff'),
+        url('Dublin-Italic.ttf') format('truetype'),
+        url('Dublin-Italic.svg#Dublin-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Dublin';
+    src: url('Dublin-LightItalic.eot');
+    src: url('Dublin-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Dublin-LightItalic.woff2') format('woff2'),
+        url('Dublin-LightItalic.woff') format('woff'),
+        url('Dublin-LightItalic.ttf') format('truetype'),
+        url('Dublin-LightItalic.svg#Dublin-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+

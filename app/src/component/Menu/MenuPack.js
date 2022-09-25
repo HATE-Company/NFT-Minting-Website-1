@@ -27,10 +27,22 @@ const MenuPack = (props) => {
           </div>
 
           <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
+            <div className="menuheader">
 
-            <h1>MENU</h1>
 
-            <a href="https://www.linktr.ee/hateverse" target={"_blank"}>WHITE PAPER</a>
+              <img src={require("../../assets/hate.png")}></img>
+              <h3 className='brandname'>Hate Company</h3>
+
+              
+
+            </div>
+
+
+            <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Home<div className="menuitem__border"></div></a>
+            
+            <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Monolith NFT Pass<div className="menuitem__border"></div></a>
+            <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Whitepaper<div className="menuitem__border"></div></a>
+            <a className="menuitem" href="https://www.linktr.ee/hateverse" target={"_blank"}>Community<div className="menuitem__border"></div></a>
                    
             </Menu>
 

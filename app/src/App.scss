@@ -1,5 +1,16 @@
 @import url(//db.onlinewebfonts.com/c/002b944b211d383987536f1ecf684bca?family=Herculanum);
-
+@font-face {
+  font-family: "Dublin";
+  src: url("./assets/font/Dublin/Dublin-Regular.ttf");
+}
+@font-face {
+  font-family: 'Gidole';
+  src: url("./assets/font/Gidole-Regular.ttf");
+}
+@font-face {
+  font-family: "Bolt";
+  src: url("./assets/font/boltboldregular.ttf");
+}
 *{
   font-family: 'Herculanum';
   
@@ -7,5 +18,15 @@
   box-sizing: border-box;
   transition: all 0.5s ease-in-out;
   scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 
+}
+.App{
+  
+  height: 100vh;
+  position: relative;
+  scroll-snap-type: y mandatory;
+  overflow: x hidden;
+    overflow: auto;
+    position: relative;
 }
