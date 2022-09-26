@@ -32,6 +32,7 @@ const MenuPack = (props) => {
 
               <img src={require("../../assets/hate.png")}></img>
               <h3 className='brandname'>Hate Company</h3>
+              <div className="filler"></div>
 
               
 
