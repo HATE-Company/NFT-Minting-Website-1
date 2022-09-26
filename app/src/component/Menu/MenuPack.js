@@ -27,7 +27,7 @@ const MenuPack = (props) => {
           </div>
 
           <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={closeSideBar}>
-            <div className="menuheader">
+            {/* <div className="menuheader">
 
 
               <img src={require("../../assets/hate.png")}></img>
@@ -36,7 +36,7 @@ const MenuPack = (props) => {
 
               
 
-            </div>
+            </div> */}
 
 
             <a className="menuitem" href="#main" onClick={closeSideBar} >Home<div className="menuitem__border"></div></a>

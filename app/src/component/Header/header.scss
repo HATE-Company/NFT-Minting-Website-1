@@ -2,10 +2,11 @@
    position: fixed;
    display: flex;
    width: 100%;
-   padding: 1rem 10rem;
+   padding: 1rem 2rem;
    height:max-content;
-   z-index: 1231313213123123131313123123131!important;
+   top:0;
    background-color: black; 
+   z-index: 31123!important;
    
     &__left{
 
@@ -17,7 +18,7 @@
       font-size: 10px;
 
       & img{
-        height: 30px;
+        height: 40px;
       }
 
     }
@@ -61,12 +62,14 @@
 
     .header{
         background-color: black;
-        padding: 2rem;
+        padding: 1rem 1rem;
+      
+        
         &__left{
             
             & img{
                 height: 
-                40px;
+                30px;
             }
         }
 
@@ -118,13 +121,13 @@
 @media (min-width: 2561px) and (max-width: 3900px){
     .header{
       background-color: black;
-      padding: 4rem 10rem;
+      padding: 6rem 6rem;
 
       &__left{
           
           & img{
               height: 
-              80px;
+              75px;
           }
       }
 
@@ -145,13 +148,13 @@
 
   .header{
     background-color: black;
-    padding: 3rem 10rem;
+    padding: 3rem 3rem;
 
     &__left{
         
         & img{
             height: 
-            60px;
+            50px;
         }
     }
 

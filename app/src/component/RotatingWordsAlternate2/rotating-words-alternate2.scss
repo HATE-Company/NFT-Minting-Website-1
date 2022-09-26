@@ -25,7 +25,7 @@
     font-weight: 500;
     position: relative;
     top: 5px;
-    animation: slide2 4s steps(2) infinite;
+    animation: slide2 2s steps(2) infinite;
 }
 
 @keyframes slide2 {
@@ -44,9 +44,9 @@
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: rgb(9, 14, 14);
+    background: black;
     border-left: 2px solid #e604ee;
-    animation: typing2 2s steps(9) infinite;
+    animation: typing2 1s steps(9) infinite;
 
 }
 
@@ -98,7 +98,8 @@
         bottom: 0;
         height: 100%;
         width: 100%;
-        background: rgb(9, 14, 14);
+        background: black;
+        // background: rgb(9, 14, 14);
         border-left: 2px solid #e604ee;
         animation: typing2 2s steps(9) infinite!important;
     

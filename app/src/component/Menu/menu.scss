@@ -48,6 +48,7 @@
         align-items: flex-start;
         padding: 0 10rem;
         height: 80%!important;
+        margin-top: 8rem;
         top: 0rem!important;
 
     }
@@ -154,7 +155,7 @@
 .menuheader{
     width: 100%;
     height: 3rem;
-    top: 2%!important;
+    top: 1%!important;
     left: 0;
     display: flex!important;
     justify-content: flex-start;
@@ -165,8 +166,10 @@
 
 
     & img{
-        height: 30px;
+        height: 40px;
         position: absolute;
+margin-left: -7.5rem;
+
         left: 0;
         
 
@@ -209,7 +212,7 @@ transition: all 1s ease-in-out;
     position: relative;
     z-index: 9999999;
 }
-@media (min-width: 499px) and (max-width: 1024px) {
+@media (min-width: 541px) and (max-width: 1024px) {
 
     .brandname{
         font-size: 15px;
@@ -217,7 +220,7 @@ transition: all 1s ease-in-out;
     .outercontainer{
 
         & a{
-            font-size: 35px;
+            font-size: 50px!important;
             margin-bottom: 3rem;
         }
     }
@@ -229,8 +232,12 @@ transition: all 1s ease-in-out;
     .bm-menu{
         padding: 1.6rem!important;;
     }
+    .menuitem{
+        margin-bottom: 6rem!important;
+    }
     .bm-item-list{
         padding: 0rem 2rem!important;
+        margin-top: 12rem;
     }
 
 }
@@ -241,13 +248,16 @@ transition: all 1s ease-in-out;
     .menuheader{
         top: -2%;
         margin-bottom: 5rem;
+
         & img{
             height: 25px;
             margin-left: -1rem;
         }
+
     }
     .menuitem{
         margin-left: -1rem;
+        margin-bottom: 2rem!important;
 
         &__border{
             display: none;
@@ -261,6 +271,7 @@ transition: all 1s ease-in-out;
     .bm-item-list{
         padding-left:  2rem!important;
         padding-right:  2rem!important;
+        margin-top: 5rem;
     }
 
     .menuicon{
@@ -305,6 +316,10 @@ transition: all 1s ease-in-out;
         & img{
             height: 40px;
         }
+    }
+    .menuicon{
+        transform: scale(0.7);
+        transform-origin: right;
     }
     .bm-menu{
         padding-top: 1.3rem!important;
@@ -409,10 +424,13 @@ transition: all 1s ease-in-out;
         transform-origin: right;
         
     }
+    
     .menuheader{
-        top: 4%!important;
+        top: 5.5%!important;
         font-size: 40px;
         margin-bottom: 18rem;
+        margin-left: -4rem;
+
         & img{
             height: 80px;
         }
@@ -421,6 +439,7 @@ transition: all 1s ease-in-out;
     .menuitem{
         font-size: 100px!important;
         margin-bottom: 12rem!important;
+        margin-left: -4rem;
 
         &__border{
             height: 20%;
@@ -436,15 +455,18 @@ transition: all 1s ease-in-out;
         
     }
     .menuheader{
-        top: 4.2%!important;
+        top: 5.5%!important;
         font-size: 30px;
-        margin-bottom: 18rem;
+        margin-bottom: 11rem;
         & img{
             height: 60px;
+            margin-left: -7rem;
         }
     }
     .menuitem{
         line-height: 85px;
+        margin-left: -7rem;
+
         font-size: 65px!important;
         margin-bottom: 5rem!important;
     }

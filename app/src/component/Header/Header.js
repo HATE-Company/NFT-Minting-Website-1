@@ -1,14 +1,23 @@
 
+import { useState } from "react";
 import MenuPack from "../Menu/MenuPack";
 import "./header.scss"
 
 
-const Header = () => {
+const Header = (props) => {
 
+const [style, setStyle] = useState({
+    display:'default'
+})
 
+if(props.hide===true){
+    setStyle({
+        display:'none'
+    })
+}
    
     return(
-        <div className='header'>
+        <div className='header' style={style}>
 
             <div className='header__left'>
 
