@@ -85,9 +85,34 @@
 
 @media (min-width: 541px) and (max-width: 1024px) {
 
+  @media(min-height: 300px) and (max-height: 600px){
+    .header{
+      background-color: black;
+      padding: 0rem 1rem!important;
+    
+      
+      &__left{
+          
+          & img{
+              height: 
+              25px!important;
+          }
+      }
+
+      &__middle{
+        
+        & img{
+          height:20px;
+        }
+      }
+      
+  }
+
+  }
+
     .header{
         background-color: black;
-        padding: 1rem 1rem;
+        padding: 1rem 1.8rem;
       
         
         &__left{
@@ -110,6 +135,8 @@
     
 }
 @media (min-height: 550px) and (max-height: 700px){
+
+  
   .header{
     background-color: black;
     padding: 0rem 1rem;

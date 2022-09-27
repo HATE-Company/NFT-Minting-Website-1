@@ -69,15 +69,31 @@
 .monolith__welcoming{
     width: 80%;
     height: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items:center;
-
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: space-between;
+    &::-webkit-scrollbar {
+        width: 12px;
+      }
+    
+      &::-webkit-scrollbar-track {
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background-color: #696969;
+        border-radius: 9px;
+        border: 0px none #ffffff;
+      }
     &__item{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        flex-shrink: 0;
+        flex-basis:22rem;
+        scroll-snap-align: start;
         height: 100%;
         align-items: center;
        
@@ -106,4 +122,14 @@
     & img{
         height: 70%;
     }
+}
+
+@media(min-width:200px) and (max-width: 500px){
+
+    .monolith__welcoming__item{
+
+        flex-basis: 100%;
+
+    }
+
 }

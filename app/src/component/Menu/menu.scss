@@ -46,7 +46,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0 10rem;
+        padding: 0 2rem;
         height: 80%!important;
         margin-top: 8rem;
         top: 0rem!important;
@@ -214,13 +214,31 @@ transition: all 1s ease-in-out;
 }
 @media (min-width: 541px) and (max-width: 1024px) {
 
+    @media(min-height: 500px) and (max-height: 1000px){
+        .menuitem{
+            font-size:20px!important;
+            // margin-bottom: 3rem!important;
+        }
+        .bm-item-list{
+            margin-top: 5rem!important;
+        }
+    }
+
+    @media(min-height: 300px) and (max-height:600px){
+
+        .bm-item-list{
+            margin-top: 3rem!important;
+            font-size: 0rem!important;
+        }
+    }
+
     .brandname{
         font-size: 15px;
     }
     .outercontainer{
 
         & a{
-            font-size: 50px!important;
+            font-size: 50px;
             margin-bottom: 3rem;
         }
     }
@@ -233,7 +251,8 @@ transition: all 1s ease-in-out;
         padding: 1.6rem!important;;
     }
     .menuitem{
-        margin-bottom: 6rem!important;
+        margin-bottom: 3.4rem!important;
+        padding-bottom: 0;
     }
     .bm-item-list{
         padding: 0rem 2rem!important;
@@ -312,6 +331,12 @@ transition: all 1s ease-in-out;
     }
 }
 @media (min-width: 500px) and (max-width: 1024px) {
+    @media(min-height: 300px) and (max-height: 600px){
+        .menuicon{
+            transform: scale(0.5)!important;
+            transform-origin: right!important;
+        }
+    }
     .brandname{
         font-size: 12px!important;
     }
@@ -350,9 +375,11 @@ transition: all 1s ease-in-out;
         }
         & a {
             margin-top: 0rem;
-            font-size: 30px;
+            font-size: 20px;
             margin-bottom: 2rem;
             text-decoration: none;
+            font-size: 40px!important;
+
             letter-spacing: 0px!important;
             color: white!important;
     
@@ -363,13 +390,16 @@ transition: all 1s ease-in-out;
         }
     }
 }
-// @media (min-height: 500px) and (max-height: 1100px){
-//     .menuitem{
-//         font-size: 20px!important;
-//     }
-// }
+@media (min-height: 500px) and (max-height: 1100px){
+    .bm-item-list{
+    }
+
+  
+}
 
 @media (min-width: 200px) and (max-width: 300px) {
+
+  
     .brandname{
         font-size: 8px!important;
     }
@@ -444,7 +474,6 @@ transition: all 1s ease-in-out;
     .menuitem{
         font-size: 100px!important;
         margin-bottom: 12rem!important;
-        margin-left: -4rem;
 
         &__border{
             height: 20%;
@@ -470,7 +499,6 @@ transition: all 1s ease-in-out;
     }
     .menuitem{
         line-height: 85px;
-        margin-left: -7rem;
 
         font-size: 65px!important;
         margin-bottom: 5rem!important;
