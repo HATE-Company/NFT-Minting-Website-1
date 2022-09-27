@@ -56,9 +56,34 @@
       }
     }
 }
+@media (min-width: 1025px) and (max-width: 1300px) {
 
+  .header{
+      background-color: black;
+      padding: 0rem 1rem;
+    
+      
+      &__left{
+          
+          & img{
+              height: 
+              25px;
+          }
+      }
 
-@media (min-width: 499px) and (max-width: 1024px) {
+      &__middle{
+        
+        & img{
+          height:20px;
+        }
+      }
+      
+  }
+  
+  
+}
+
+@media (min-width: 541px) and (max-width: 1024px) {
 
     .header{
         background-color: black;
@@ -84,8 +109,32 @@
     
     
 }
+@media (min-height: 550px) and (max-height: 700px){
+  .header{
+    background-color: black;
+    padding: 0rem 1rem;
 
-@media (min-width: 200px) and (max-width: 500px) {
+    &__left{
+        
+        & img{
+            height: 
+            25px;
+        }
+    }
+
+    &__middle{
+
+   
+      & img{
+      }
+    }
+
+    &__right{
+    }
+  }
+
+}
+@media (min-width: 200px) and (max-width: 540px) {
 
 
         .header{

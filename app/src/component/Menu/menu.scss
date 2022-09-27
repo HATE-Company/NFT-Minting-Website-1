@@ -305,7 +305,12 @@ transition: all 1s ease-in-out;
         }
     }
 }
-
+@media (min-width: 1025px) and (max-width: 1300px){
+    .menuicon{
+        transform: scale(0.8);
+        transform-origin: right;
+    }
+}
 @media (min-width: 500px) and (max-width: 1024px) {
     .brandname{
         font-size: 12px!important;
