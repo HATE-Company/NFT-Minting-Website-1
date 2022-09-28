@@ -74,7 +74,7 @@ const Home = () => {
 
 
         </section>
-        <section className='first__section'>
+        {/* <section className='first__section'>
 
         <div className="monolith__welcoming2">
             <img src={require("../../assets/monolith__renders__ps/BronzeFrontV2.png")}/>
@@ -84,7 +84,7 @@ const Home = () => {
         </div>
 
 
-        </section>
+        </section> */}
 
         <section id='monolithnft' className='second__section'>
 

@@ -91,8 +91,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        flex-shrink: 0;
-        flex-basis:22rem;
+        flex-shrink: 0; 
         scroll-snap-align: start;
         height: 100%;
         align-items: center;
@@ -123,6 +122,35 @@
         height: 70%;
     }
 }
+@media(min-width:540px) and (max-width:1250px){
+    .monolith__welcoming__item{
+        margin: 0 5rem;
+
+    }
+    .monolith__welcoming{
+
+        // &__img{
+        //     height: 50%;
+        // }
+
+        // &__txt{
+        //     height: 3.5%;
+        // }
+    }
+}
+
+@media(min-width:200px) and (max-width: 500px){
+
+    .monolith__welcoming__item{
+
+        flex-basis: 100%;
+        margin:0;
+
+    }
+
+
+}
+
 
 @media(min-width:200px) and (max-width: 500px){
 

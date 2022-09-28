@@ -31,7 +31,7 @@ if(props.hide===true){
 
             <div className='header__middle'>
 
-                {/* <img src={require("../../assets/NFTPASS-welcoming.png")}/> */}
+                <img src={require("../../assets/NFTPASS-welcoming.png")}/>
 
             </div>
             <div className='header__right'>
