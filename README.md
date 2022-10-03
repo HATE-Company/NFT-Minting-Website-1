@@ -1,3 +1,3 @@
 # NFT-Minting-Website-1
 
-NFT-Minting-Website-1 | Mert#5587
+NFT Minting Website | Mert#5587
